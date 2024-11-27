@@ -32,11 +32,11 @@
             <div id="title">
                 <h1>Batalla Naval.</h1>
             </div>
-            <div class="subtitle">
-                <h2>Página de Inicio.</h2>
-            </div>
-            <div class="menu">
-                <nav class="principal">
+        </header>
+        <main>
+
+            <div class="mini-menu">
+                <nav id="menu-principal">
                     <ul>
                         <li><a href="#instrucciones">Instrucciones.</a></li>
                         <li><a href="#power-ups">Power-Ups.</a></li>
@@ -45,21 +45,20 @@
                     </ul>
                 </nav>
             </div>
-        </header>
-        <main> 
+
             <section id="instrucciones">
                 <div class="subtitle">
                     <h2>Instrucciones</h2>
                 </div>
                 <div class="mini-menu">
-                    <nav class="secundario">
+                    <nav id="menu-instrucciones">
                         <ul>
                             <li><a href="#goal">Obejtivo del Juego.</a></li>
                             <li><a href="#components">Componentes.</a></li>
                             <li><a href="#preparation">Preparación.</a></li>
                             <li><a href="#turns">Turnos.</a></li>
                             <li><a href="#hits">Impactos.</a></li>
-                            <li><a href="#sink">hundimiento.</a></li>
+                            <li><a href="#sink">Hundimiento.</a></li>
                             <li><a href="#victory">Victoria.</a></li>
                             <li><a href="#duration">Duración del Turno.</a></li>
                         </ul>
@@ -70,15 +69,13 @@
                 <h3 id="components">Componentes del Juego.</h3>
                 <p>Tablero de juego para cada jugador (10x10 cuadrículas). Se debe mostrar el tablero del propio jugador, donde se muestran la colocación dada a los barcos por parte de dicho jugador, y otra cuadrícula que representa el espacio donde el contrincante distribuyó sus barcos, y en donde se mostrarán los tiros fallidos o acertados a medida que avanza el juego.</p>
                 <p>Flota de barcos:</p>
-                <div class="list">
-                    <ul>
-                        <li>1 portaaviones (abarca 5 casillas, ya sea en sentido horizontal o vertical)</li>
-                        <li>1 acorazado (4 casillas, ya sea en sentido horizontal o vertical)</li>
-                        <li>1 crucero (3 casillas, ya sea en sentido horizontal o vertical)</li>
-                        <li>1 submarino (3 casillas, ya sea en sentido horizontal o vertical)</li>
-                        <li>1 destructor (2 casillas, ya sea en sentido horizontal o vertical)</li>
-                    </ul>
-                </div>
+                <ul class="list">
+                    <li>1 portaaviones (abarca 5 casillas, ya sea en sentido horizontal o vertical).</li>
+                    <li>1 acorazado (4 casillas, ya sea en sentido horizontal o vertical).</li>
+                    <li>1 crucero (3 casillas, ya sea en sentido horizontal o vertical).</li>
+                    <li>1 submarino (3 casillas, ya sea en sentido horizontal o vertical).</li>
+                    <li>1 destructor (2 casillas, ya sea en sentido horizontal o vertical).</li>
+                </ul>
                 <h3 id="preparation">Preparación.</h3>
                 <p>Cada jugador coloca sus barcos en el tablero de manera oculta al oponente. Los barcos pueden colocarse vertical u horizontalmente. Los barcos no pueden superponerse.</p>
                 <h3 id="turns">Turnos.</h3>
@@ -95,12 +92,13 @@
                     <p><a href="#title">Back to Top</a></p>
                 </div>
             </section>
+
             <section id="power-ups">
                 <div class="subtitle">
                     <h2>Power-Ups.</h2>
                 </div>
                 <div class="mini-menu">
-                    <nav class="secundario">
+                    <nav id="menu-power-ups">
                         <ul>
                             <li><a href="#sonar">Sonar.</a></li>
                             <li><a href="#aviones-de-ataque">Aviones de Ataque.</a></li>
@@ -113,44 +111,44 @@
                     </nav>
                 </div>
                 <h3 id="sonar">Sonar.</h3>
-                <ul>
+                <ul class="list">
                     <li>Disponible mientras el submarino no haya sido hundido.</li>
                     <li>Revela una casilla al azar de un barco enemigo.</li>
                     <li>Costo: 5 puntos por uso.</li>
                 </ul>
                 <h3 id="aviones-de-ataque">Aviones de Ataque.</h3>
-                <ul>
+                <ul class="list">
                     <li>Disponible mientras el portaaviones no haya sido hundido.</li>
                     <li>Lanza hasta 5 misiles al azar en el tablero enemigo.</li>
                     <li>Costo: 10 puntos por uso.</li>
                 </ul>
                 <h3 id="mina-marina">Mina Marina.</h3>
-                <ul>
+                <ul class="list">
                     <li>Los jugadores pueden plantar una mina en su propio tablero.</li>
                     <li>Si el enemigo ataca una mina, recibe un "hit" adicional en una casilla adyacente al azar.</li>
                     <li>Costo: 5 puntos para plantar.</li>
                 </ul>
                 <h3 id="escudo-defensivo">Escudo Defensivo.</h3>
-                <ul>
+                <ul class="list">
                     <li>Protege una región de 3x3 casillas durante 3 turnos.</li>
                     <li>Los ataques en el área protegida son anulados y el enemigo recibe un mensaje de "Bloqueado".</li>
                     <li>Costo: 15 puntos.</li>
                     <li>Un solo uso por partida.</li>
                 </ul>
                 <h3 id="misil-crucero">Misil Crucero.</h3>
-                <ul>
+                <ul class="list">
                     <li>Ataque dirigido a un área de 3x3 casillas.</li>
                     <li>Costo: 15 puntos.</li>
                     <li>Tiempo de recarga: 5 turnos.</li>
                 </ul>
                 <h3 id="reparacion-rapida">Reparación Rápida.</h3>
-                <ul>
+                <ul class="list">
                     <li>Restaura hasta 2 casillas de un barco dañado (no hundido).</li>
                     <li>Costo: 10 puntos.</li>
                     <li>Un solo uso por barco.</li>
                 </ul>
                 <h3 id="ataque-emp">Ataque EMP.</h3>
-                <ul>
+                <ul class="list">
                     <li>Desactiva todas las funciones especiales del enemigo durante 3 turnos.</li>
                     <li>Costo: 25 puntos.</li>
                     <li>Tiempo de recarga: 10 turnos.</li>
@@ -160,6 +158,7 @@
                     <p><a href="#title">Back to Top</a></p>
                 </div>
             </section>
+
             <section id="dos-jugadores">
                 <div class="subtitle">
                     <h2>Jugar entre 2 Jugadores.</h2>
@@ -185,217 +184,284 @@
                 <div class="table-title">
                     <h3>Tabla Jugador 1.</h3>
                 </div>
-                <div class="battleship-board">
-                    <div class="position" id="p1@a1">a1</div>
-                    <div class="position" id="p1@a2">a2</div>
-                    <div class="position" id="p1@a3">a3</div>
-                    <div class="position" id="p1@a4">a4</div>
-                    <div class="position" id="p1@a5">a5</div>
-                    <div class="position" id="p1@a6">a6</div>
-                    <div class="position" id="p1@a7">a7</div>
-                    <div class="position" id="p1@a8">a8</div>
-                    <div class="position" id="p1@a9">a9</div>
-                    <div class="position" id="p1@a0">a0</div>
-                    <div class="position" id="p1@b1">b1</div>
-                    <div class="position" id="p1@b2">b2</div>
-                    <div class="position" id="p1@b3">b3</div>
-                    <div class="position" id="p1@b4">b4</div>
-                    <div class="position" id="p1@b5">b5</div>
-                    <div class="position" id="p1@b6">b6</div>
-                    <div class="position" id="p1@b7">b7</div>
-                    <div class="position" id="p1@b8">b8</div>
-                    <div class="position" id="p1@b9">b9</div>
-                    <div class="position" id="p1@b0">b0</div>
-                    <div class="position" id="p1@c1">c1</div>
-                    <div class="position" id="p1@c2">c2</div>
-                    <div class="position" id="p1@c3">c3</div>
-                    <div class="position" id="p1@c4">c4</div>
-                    <div class="position" id="p1@c5">c5</div>
-                    <div class="position" id="p1@c6">c6</div>
-                    <div class="position" id="p1@c7">c7</div>
-                    <div class="position" id="p1@c8">c8</div>
-                    <div class="position" id="p1@c9">c9</div>
-                    <div class="position" id="p1@c0">c0</div>
-                    <div class="position" id="p1@d1">d1</div>
-                    <div class="position" id="p1@d2">d2</div>
-                    <div class="position" id="p1@d3">d3</div>
-                    <div class="position" id="p1@d4">d4</div>
-                    <div class="position" id="p1@d5">d5</div>
-                    <div class="position" id="p1@d6">d6</div>
-                    <div class="position" id="p1@d7">d7</div>
-                    <div class="position" id="p1@d8">d8</div>
-                    <div class="position" id="p1@d9">d9</div>
-                    <div class="position" id="p1@d0">d0</div>
-                    <div class="position" id="p1@e1">e1</div>
-                    <div class="position" id="p1@e2">e2</div>
-                    <div class="position" id="p1@e3">e3</div>
-                    <div class="position" id="p1@e4">e4</div>
-                    <div class="position" id="p1@e5">e5</div>
-                    <div class="position" id="p1@e6">e6</div>
-                    <div class="position" id="p1@e7">e7</div>
-                    <div class="position" id="p1@e8">e8</div>
-                    <div class="position" id="p1@e9">e9</div>
-                    <div class="position" id="p1@e0">e0</div>
-                    <div class="position" id="p1@f1">f1</div>
-                    <div class="position" id="p1@f2">f2</div>
-                    <div class="position" id="p1@f3">f3</div>
-                    <div class="position" id="p1@f4">f4</div>
-                    <div class="position" id="p1@f5">f5</div>
-                    <div class="position" id="p1@f6">f6</div>
-                    <div class="position" id="p1@f7">f7</div>
-                    <div class="position" id="p1@f8">f8</div>
-                    <div class="position" id="p1@f9">f9</div>
-                    <div class="position" id="p1@f0">f0</div>
-                    <div class="position" id="p1@g1">g1</div>
-                    <div class="position" id="p1@g2">g2</div>
-                    <div class="position" id="p1@g3">g3</div>
-                    <div class="position" id="p1@g4">g4</div>
-                    <div class="position" id="p1@g5">g5</div>
-                    <div class="position" id="p1@g6">g6</div>
-                    <div class="position" id="p1@g7">g7</div>
-                    <div class="position" id="p1@g8">g8</div>
-                    <div class="position" id="p1@g9">g9</div>
-                    <div class="position" id="p1@g0">g0</div>
-                    <div class="position" id="p1@h1">h1</div>
-                    <div class="position" id="p1@h2">h2</div>
-                    <div class="position" id="p1@h3">h3</div>
-                    <div class="position" id="p1@h4">h4</div>
-                    <div class="position" id="p1@h5">h5</div>
-                    <div class="position" id="p1@h6">h6</div>
-                    <div class="position" id="p1@h7">h7</div>
-                    <div class="position" id="p1@h8">h8</div>
-                    <div class="position" id="p1@h9">h9</div>
-                    <div class="position" id="p1@h0">h0</div>
-                    <div class="position" id="p1@i1">i1</div>
-                    <div class="position" id="p1@i2">i2</div>
-                    <div class="position" id="p1@i3">i3</div>
-                    <div class="position" id="p1@i4">i4</div>
-                    <div class="position" id="p1@i5">i5</div>
-                    <div class="position" id="p1@i6">i6</div>
-                    <div class="position" id="p1@i7">i7</div>
-                    <div class="position" id="p1@i8">i8</div>
-                    <div class="position" id="p1@i9">i9</div>
-                    <div class="position" id="p1@i0">i0</div>
-                    <div class="position" id="p1@j1">j1</div>
-                    <div class="position" id="p1@j2">j2</div>
-                    <div class="position" id="p1@j3">j3</div>
-                    <div class="position" id="p1@j4">j4</div>
-                    <div class="position" id="p1@j5">j5</div>
-                    <div class="position" id="p1@j6">j6</div>
-                    <div class="position" id="p1@j7">j7</div>
-                    <div class="position" id="p1@j8">j8</div>
-                    <div class="position" id="p1@j9">j9</div>
-                    <div class="position" id="p1@j0">j0</div>
+                <div class="battleship-board" id="tablero-2-jugadores-1">
+
+                    <div class="position header"></div>
+                    <div class="position header">A</div>
+                    <div class="position header">B</div>
+                    <div class="position header">C</div>
+                    <div class="position header">D</div>
+                    <div class="position header">E</div>
+                    <div class="position header">F</div>
+                    <div class="position header">G</div>
+                    <div class="position header">H</div>
+                    <div class="position header">I</div>
+                    <div class="position header">J</div>
+
+                    <div class="position header">1</div>
+                    <div class="position" id="p3b1"></div>
+                    <div class="position" id="p3b2"></div>
+                    <div class="position" id="p3b3"></div>
+                    <div class="position" id="p3b4"></div>
+                    <div class="position" id="p3b5"></div>
+                    <div class="position" id="p3b6"></div>
+                    <div class="position" id="p3b7"></div>
+                    <div class="position" id="p3b8"></div>
+                    <div class="position" id="p3b9"></div>
+                    <div class="position" id="p3b0"></div>
+
+                    <div class="position header">2</div>
+                    <div class="position" id="p3c1"></div>
+                    <div class="position" id="p3c2"></div>
+                    <div class="position" id="p3c3"></div>
+                    <div class="position" id="p3c4"></div>
+                    <div class="position" id="p3c5"></div>
+                    <div class="position" id="p3c6"></div>
+                    <div class="position" id="p3c7"></div>
+                    <div class="position" id="p3c8"></div>
+                    <div class="position" id="p3c9"></div>
+                    <div class="position" id="p3c0"></div>
+        
+                    <div class="position header">3</div>
+                    <div class="position" id="p3d1"></div>
+                    <div class="position" id="p3d2"></div>
+                    <div class="position" id="p3d3"></div>
+                    <div class="position" id="p3d4"></div>
+                    <div class="position" id="p3d5"></div>
+                    <div class="position" id="p3d6"></div>
+                    <div class="position" id="p3d7"></div>
+                    <div class="position" id="p3d8"></div>
+                    <div class="position" id="p3d9"></div>
+                    <div class="position" id="p3d0"></div>
+        
+                    <div class="position header">4</div>
+                    <div class="position" id="p3e1"></div>
+                    <div class="position" id="p3e2"></div>
+                    <div class="position" id="p3e3"></div>
+                    <div class="position" id="p3e4"></div>
+                    <div class="position" id="p3e5"></div>
+                    <div class="position" id="p3e6"></div>
+                    <div class="position" id="p3e7"></div>
+                    <div class="position" id="p3e8"></div>
+                    <div class="position" id="p3e9"></div>
+                    <div class="position" id="p3e0"></div>
+        
+                    <div class="position header">5</div>
+                    <div class="position" id="p3f1"></div>
+                    <div class="position" id="p3f2"></div>
+                    <div class="position" id="p3f3"></div>
+                    <div class="position" id="p3f4"></div>
+                    <div class="position" id="p3f5"></div>
+                    <div class="position" id="p3f6"></div>
+                    <div class="position" id="p3f7"></div>
+                    <div class="position" id="p3f8"></div>
+                    <div class="position" id="p3f9"></div>
+                    <div class="position" id="p3f0"></div>
+        
+                    <div class="position header">6</div>
+                    <div class="position" id="p3g1"></div>
+                    <div class="position" id="p3g2"></div>
+                    <div class="position" id="p3g3"></div>
+                    <div class="position" id="p3g4"></div>
+                    <div class="position" id="p3g5"></div>
+                    <div class="position" id="p3g6"></div>
+                    <div class="position" id="p3g7"></div>
+                    <div class="position" id="p3g8"></div>
+                    <div class="position" id="p3g9"></div>
+                    <div class="position" id="p3g0"></div>
+        
+                    <div class="position header">7</div>
+                    <div class="position" id="p3h1"></div>
+                    <div class="position" id="p3h2"></div>
+                    <div class="position" id="p3h3"></div>
+                    <div class="position" id="p3h4"></div>
+                    <div class="position" id="p3h5"></div>
+                    <div class="position" id="p3h6"></div>
+                    <div class="position" id="p3h7"></div>
+                    <div class="position" id="p3h8"></div>
+                    <div class="position" id="p3h9"></div>
+                    <div class="position" id="p3h0"></div>
+        
+                    <div class="position header">8</div>
+                    <div class="position" id="p3i1"></div>
+                    <div class="position" id="p3i2"></div>
+                    <div class="position" id="p3i3"></div>
+                    <div class="position" id="p3i4"></div>
+                    <div class="position" id="p3i5"></div>
+                    <div class="position" id="p3i6"></div>
+                    <div class="position" id="p3i7"></div>
+                    <div class="position" id="p3i8"></div>
+                    <div class="position" id="p3i9"></div>
+                    <div class="position" id="p3i0"></div>
+        
+                    <div class="position header">9</div>
+                    <div class="position" id="p3j1"></div>
+                    <div class="position" id="p3j2"></div>
+                    <div class="position" id="p3j3"></div>
+                    <div class="position" id="p3j4"></div>
+                    <div class="position" id="p3j5"></div>
+                    <div class="position" id="p3j6"></div>
+                    <div class="position" id="p3j7"></div>
+                    <div class="position" id="p3j8"></div>
+                    <div class="position" id="p3j9"></div>
+                    <div class="position" id="p3j0"></div>
+        
+                    <div class="position header">10</div>
+                    <div class="position" id="p3k1"></div>
+                    <div class="position" id="p3k2"></div>
+                    <div class="position" id="p3k3"></div>
+                    <div class="position" id="p3k4"></div>
+                    <div class="position" id="p3k5"></div>
+                    <div class="position" id="p3k6"></div>
+                    <div class="position" id="p3k7"></div>
+                    <div class="position" id="p3k8"></div>
+                    <div class="position" id="p3k9"></div>
+                    <div class="position" id="p3k0"></div>
+            
                 </div>
                 <div class="table-title">
                     <h3>Tabla Jugador 2.</h3>
                 </div>
-                <div class="battleship-board">
-                    <div class="position" id="p2@a1">a1</div>
-                    <div class="position" id="p2@a2">a2</div>
-                    <div class="position" id="p2@a3">a3</div>
-                    <div class="position" id="p2@a4">a4</div>
-                    <div class="position" id="p2@a5">a5</div>
-                    <div class="position" id="p2@a6">a6</div>
-                    <div class="position" id="p2@a7">a7</div>
-                    <div class="position" id="p2@a8">a8</div>
-                    <div class="position" id="p2@a9">a9</div>
-                    <div class="position" id="p2@a0">a0</div>
-                    <div class="position" id="p2@b1">b1</div>
-                    <div class="position" id="p2@b2">b2</div>
-                    <div class="position" id="p2@b3">b3</div>
-                    <div class="position" id="p2@b4">b4</div>
-                    <div class="position" id="p2@b5">b5</div>
-                    <div class="position" id="p2@b6">b6</div>
-                    <div class="position" id="p2@b7">b7</div>
-                    <div class="position" id="p2@b8">b8</div>
-                    <div class="position" id="p2@b9">b9</div>
-                    <div class="position" id="p2@b0">b0</div>
-                    <div class="position" id="p2@c1">c1</div>
-                    <div class="position" id="p2@c2">c2</div>
-                    <div class="position" id="p2@c3">c3</div>
-                    <div class="position" id="p2@c4">c4</div>
-                    <div class="position" id="p2@c5">c5</div>
-                    <div class="position" id="p2@c6">c6</div>
-                    <div class="position" id="p2@c7">c7</div>
-                    <div class="position" id="p2@c8">c8</div>
-                    <div class="position" id="p2@c9">c9</div>
-                    <div class="position" id="p2@c0">c0</div>
-                    <div class="position" id="p2@d1">d1</div>
-                    <div class="position" id="p2@d2">d2</div>
-                    <div class="position" id="p2@d3">d3</div>
-                    <div class="position" id="p2@d4">d4</div>
-                    <div class="position" id="p2@d5">d5</div>
-                    <div class="position" id="p2@d6">d6</div>
-                    <div class="position" id="p2@d7">d7</div>
-                    <div class="position" id="p2@d8">d8</div>
-                    <div class="position" id="p2@d9">d9</div>
-                    <div class="position" id="p2@d0">d0</div>
-                    <div class="position" id="p2@e1">e1</div>
-                    <div class="position" id="p2@e2">e2</div>
-                    <div class="position" id="p2@e3">e3</div>
-                    <div class="position" id="p2@e4">e4</div>
-                    <div class="position" id="p2@e5">e5</div>
-                    <div class="position" id="p2@e6">e6</div>
-                    <div class="position" id="p2@e7">e7</div>
-                    <div class="position" id="p2@e8">e8</div>
-                    <div class="position" id="p2@e9">e9</div>
-                    <div class="position" id="p2@e0">e0</div>
-                    <div class="position" id="p2@f1">f1</div>
-                    <div class="position" id="p2@f2">f2</div>
-                    <div class="position" id="p2@f3">f3</div>
-                    <div class="position" id="p2@f4">f4</div>
-                    <div class="position" id="p2@f5">f5</div>
-                    <div class="position" id="p2@f6">f6</div>
-                    <div class="position" id="p2@f7">f7</div>
-                    <div class="position" id="p2@f8">f8</div>
-                    <div class="position" id="p2@f9">f9</div>
-                    <div class="position" id="p2@f0">f0</div>
-                    <div class="position" id="p2@g1">g1</div>
-                    <div class="position" id="p2@g2">g2</div>
-                    <div class="position" id="p2@g3">g3</div>
-                    <div class="position" id="p2@g4">g4</div>
-                    <div class="position" id="p2@g5">g5</div>
-                    <div class="position" id="p2@g6">g6</div>
-                    <div class="position" id="p2@g7">g7</div>
-                    <div class="position" id="p2@g8">g8</div>
-                    <div class="position" id="p2@g9">g9</div>
-                    <div class="position" id="p2@g0">g0</div>
-                    <div class="position" id="p2@h1">h1</div>
-                    <div class="position" id="p2@h2">h2</div>
-                    <div class="position" id="p2@h3">h3</div>
-                    <div class="position" id="p2@h4">h4</div>
-                    <div class="position" id="p2@h5">h5</div>
-                    <div class="position" id="p2@h6">h6</div>
-                    <div class="position" id="p2@h7">h7</div>
-                    <div class="position" id="p2@h8">h8</div>
-                    <div class="position" id="p2@h9">h9</div>
-                    <div class="position" id="p2@h0">h0</div>
-                    <div class="position" id="p2@i1">i1</div>
-                    <div class="position" id="p2@i2">i2</div>
-                    <div class="position" id="p2@i3">i3</div>
-                    <div class="position" id="p2@i4">i4</div>
-                    <div class="position" id="p2@i5">i5</div>
-                    <div class="position" id="p2@i6">i6</div>
-                    <div class="position" id="p2@i7">i7</div>
-                    <div class="position" id="p2@i8">i8</div>
-                    <div class="position" id="p2@i9">i9</div>
-                    <div class="position" id="p2@i0">i0</div>
-                    <div class="position" id="p2@j1">j1</div>
-                    <div class="position" id="p2@j2">j2</div>
-                    <div class="position" id="p2@j3">j3</div>
-                    <div class="position" id="p2@j4">j4</div>
-                    <div class="position" id="p2@j5">j5</div>
-                    <div class="position" id="p2@j6">j6</div>
-                    <div class="position" id="p2@j7">j7</div>
-                    <div class="position" id="p2@j8">j8</div>
-                    <div class="position" id="p2@j9">j9</div>
-                    <div class="position" id="p2@j0">j0</div>
+                <div class="battleship-board" id="tablero-2-jugadores-2">
+
+                    <div class="position header"></div>
+                    <div class="position header">A</div>
+                    <div class="position header">B</div>
+                    <div class="position header">C</div>
+                    <div class="position header">D</div>
+                    <div class="position header">E</div>
+                    <div class="position header">F</div>
+                    <div class="position header">G</div>
+                    <div class="position header">H</div>
+                    <div class="position header">I</div>
+                    <div class="position header">J</div>
+
+                    <div class="position header">1</div>
+                    <div class="position" id="p3b1"></div>
+                    <div class="position" id="p3b2"></div>
+                    <div class="position" id="p3b3"></div>
+                    <div class="position" id="p3b4"></div>
+                    <div class="position" id="p3b5"></div>
+                    <div class="position" id="p3b6"></div>
+                    <div class="position" id="p3b7"></div>
+                    <div class="position" id="p3b8"></div>
+                    <div class="position" id="p3b9"></div>
+                    <div class="position" id="p3b0"></div>
+
+                    <div class="position header">2</div>
+                    <div class="position" id="p3c1"></div>
+                    <div class="position" id="p3c2"></div>
+                    <div class="position" id="p3c3"></div>
+                    <div class="position" id="p3c4"></div>
+                    <div class="position" id="p3c5"></div>
+                    <div class="position" id="p3c6"></div>
+                    <div class="position" id="p3c7"></div>
+                    <div class="position" id="p3c8"></div>
+                    <div class="position" id="p3c9"></div>
+                    <div class="position" id="p3c0"></div>
+        
+                    <div class="position header">3</div>
+                    <div class="position" id="p3d1"></div>
+                    <div class="position" id="p3d2"></div>
+                    <div class="position" id="p3d3"></div>
+                    <div class="position" id="p3d4"></div>
+                    <div class="position" id="p3d5"></div>
+                    <div class="position" id="p3d6"></div>
+                    <div class="position" id="p3d7"></div>
+                    <div class="position" id="p3d8"></div>
+                    <div class="position" id="p3d9"></div>
+                    <div class="position" id="p3d0"></div>
+        
+                    <div class="position header">4</div>
+                    <div class="position" id="p3e1"></div>
+                    <div class="position" id="p3e2"></div>
+                    <div class="position" id="p3e3"></div>
+                    <div class="position" id="p3e4"></div>
+                    <div class="position" id="p3e5"></div>
+                    <div class="position" id="p3e6"></div>
+                    <div class="position" id="p3e7"></div>
+                    <div class="position" id="p3e8"></div>
+                    <div class="position" id="p3e9"></div>
+                    <div class="position" id="p3e0"></div>
+        
+                    <div class="position header">5</div>
+                    <div class="position" id="p3f1"></div>
+                    <div class="position" id="p3f2"></div>
+                    <div class="position" id="p3f3"></div>
+                    <div class="position" id="p3f4"></div>
+                    <div class="position" id="p3f5"></div>
+                    <div class="position" id="p3f6"></div>
+                    <div class="position" id="p3f7"></div>
+                    <div class="position" id="p3f8"></div>
+                    <div class="position" id="p3f9"></div>
+                    <div class="position" id="p3f0"></div>
+        
+                    <div class="position header">6</div>
+                    <div class="position" id="p3g1"></div>
+                    <div class="position" id="p3g2"></div>
+                    <div class="position" id="p3g3"></div>
+                    <div class="position" id="p3g4"></div>
+                    <div class="position" id="p3g5"></div>
+                    <div class="position" id="p3g6"></div>
+                    <div class="position" id="p3g7"></div>
+                    <div class="position" id="p3g8"></div>
+                    <div class="position" id="p3g9"></div>
+                    <div class="position" id="p3g0"></div>
+        
+                    <div class="position header">7</div>
+                    <div class="position" id="p3h1"></div>
+                    <div class="position" id="p3h2"></div>
+                    <div class="position" id="p3h3"></div>
+                    <div class="position" id="p3h4"></div>
+                    <div class="position" id="p3h5"></div>
+                    <div class="position" id="p3h6"></div>
+                    <div class="position" id="p3h7"></div>
+                    <div class="position" id="p3h8"></div>
+                    <div class="position" id="p3h9"></div>
+                    <div class="position" id="p3h0"></div>
+        
+                    <div class="position header">8</div>
+                    <div class="position" id="p3i1"></div>
+                    <div class="position" id="p3i2"></div>
+                    <div class="position" id="p3i3"></div>
+                    <div class="position" id="p3i4"></div>
+                    <div class="position" id="p3i5"></div>
+                    <div class="position" id="p3i6"></div>
+                    <div class="position" id="p3i7"></div>
+                    <div class="position" id="p3i8"></div>
+                    <div class="position" id="p3i9"></div>
+                    <div class="position" id="p3i0"></div>
+        
+                    <div class="position header">9</div>
+                    <div class="position" id="p3j1"></div>
+                    <div class="position" id="p3j2"></div>
+                    <div class="position" id="p3j3"></div>
+                    <div class="position" id="p3j4"></div>
+                    <div class="position" id="p3j5"></div>
+                    <div class="position" id="p3j6"></div>
+                    <div class="position" id="p3j7"></div>
+                    <div class="position" id="p3j8"></div>
+                    <div class="position" id="p3j9"></div>
+                    <div class="position" id="p3j0"></div>
+        
+                    <div class="position header">10</div>
+                    <div class="position" id="p3k1"></div>
+                    <div class="position" id="p3k2"></div>
+                    <div class="position" id="p3k3"></div>
+                    <div class="position" id="p3k4"></div>
+                    <div class="position" id="p3k5"></div>
+                    <div class="position" id="p3k6"></div>
+                    <div class="position" id="p3k7"></div>
+                    <div class="position" id="p3k8"></div>
+                    <div class="position" id="p3k9"></div>
+                    <div class="position" id="p3k0"></div>
+            
                 </div>
                 <div class="back-to-top">
                     <p><a href="#title">Back to Top</a></p>
                 </div>
             </section>
+
             <section id="x-jugadores">
                 <div class="subtitle">
                     <h2>Jugar entre 3 y 4 Jugadores.</h2>
@@ -457,317 +523,416 @@
                     <div class="table-title">
                         <h3>Tabla Jugador 1.</h3>
                     </div>
-                    <div class="battleship-board">
-                        <div class="position" id="p3@a1">a1</div>
-                        <div class="position" id="p3@a2">a2</div>
-                        <div class="position" id="p3@a3">a3</div>
-                        <div class="position" id="p3@a4">a4</div>
-                        <div class="position" id="p3@a5">a5</div>
-                        <div class="position" id="p3@a6">a6</div>
-                        <div class="position" id="p3@a7">a7</div>
-                        <div class="position" id="p3@a8">a8</div>
-                        <div class="position" id="p3@a9">a9</div>
-                        <div class="position" id="p3@a0">a0</div>
-                        <div class="position" id="p3@b1">b1</div>
-                        <div class="position" id="p3@b2">b2</div>
-                        <div class="position" id="p3@b3">b3</div>
-                        <div class="position" id="p3@b4">b4</div>
-                        <div class="position" id="p3@b5">b5</div>
-                        <div class="position" id="p3@b6">b6</div>
-                        <div class="position" id="p3@b7">b7</div>
-                        <div class="position" id="p3@b8">b8</div>
-                        <div class="position" id="p3@b9">b9</div>
-                        <div class="position" id="p3@b0">b0</div>
-                        <div class="position" id="p3@c1">c1</div>
-                        <div class="position" id="p3@c2">c2</div>
-                        <div class="position" id="p3@c3">c3</div>
-                        <div class="position" id="p3@c4">c4</div>
-                        <div class="position" id="p3@c5">c5</div>
-                        <div class="position" id="p3@c6">c6</div>
-                        <div class="position" id="p3@c7">c7</div>
-                        <div class="position" id="p3@c8">c8</div>
-                        <div class="position" id="p3@c9">c9</div>
-                        <div class="position" id="p3@c0">c0</div>
-                        <div class="position" id="p3@d1">d1</div>
-                        <div class="position" id="p3@d2">d2</div>
-                        <div class="position" id="p3@d3">d3</div>
-                        <div class="position" id="p3@d4">d4</div>
-                        <div class="position" id="p3@d5">d5</div>
-                        <div class="position" id="p3@d6">d6</div>
-                        <div class="position" id="p3@d7">d7</div>
-                        <div class="position" id="p3@d8">d8</div>
-                        <div class="position" id="p3@d9">d9</div>
-                        <div class="position" id="p3@d0">d0</div>
-                        <div class="position" id="p3@e1">e1</div>
-                        <div class="position" id="p3@e2">e2</div>
-                        <div class="position" id="p3@e3">e3</div>
-                        <div class="position" id="p3@e4">e4</div>
-                        <div class="position" id="p3@e5">e5</div>
-                        <div class="position" id="p3@e6">e6</div>
-                        <div class="position" id="p3@e7">e7</div>
-                        <div class="position" id="p3@e8">e8</div>
-                        <div class="position" id="p3@e9">e9</div>
-                        <div class="position" id="p3@e0">e0</div>
-                        <div class="position" id="p3@f1">f1</div>
-                        <div class="position" id="p3@f2">f2</div>
-                        <div class="position" id="p3@f3">f3</div>
-                        <div class="position" id="p3@f4">f4</div>
-                        <div class="position" id="p3@f5">f5</div>
-                        <div class="position" id="p3@f6">f6</div>
-                        <div class="position" id="p3@f7">f7</div>
-                        <div class="position" id="p3@f8">f8</div>
-                        <div class="position" id="p3@f9">f9</div>
-                        <div class="position" id="p3@f0">f0</div>
-                        <div class="position" id="p3@g1">g1</div>
-                        <div class="position" id="p3@g2">g2</div>
-                        <div class="position" id="p3@g3">g3</div>
-                        <div class="position" id="p3@g4">g4</div>
-                        <div class="position" id="p3@g5">g5</div>
-                        <div class="position" id="p3@g6">g6</div>
-                        <div class="position" id="p3@g7">g7</div>
-                        <div class="position" id="p3@g8">g8</div>
-                        <div class="position" id="p3@g9">g9</div>
-                        <div class="position" id="p3@g0">g0</div>
-                        <div class="position" id="p3@h1">h1</div>
-                        <div class="position" id="p3@h2">h2</div>
-                        <div class="position" id="p3@h3">h3</div>
-                        <div class="position" id="p3@h4">h4</div>
-                        <div class="position" id="p3@h5">h5</div>
-                        <div class="position" id="p3@h6">h6</div>
-                        <div class="position" id="p3@h7">h7</div>
-                        <div class="position" id="p3@h8">h8</div>
-                        <div class="position" id="p3@h9">h9</div>
-                        <div class="position" id="p3@h0">h0</div>
-                        <div class="position" id="p3@i1">i1</div>
-                        <div class="position" id="p3@i2">i2</div>
-                        <div class="position" id="p3@i3">i3</div>
-                        <div class="position" id="p3@i4">i4</div>
-                        <div class="position" id="p3@i5">i5</div>
-                        <div class="position" id="p3@i6">i6</div>
-                        <div class="position" id="p3@i7">i7</div>
-                        <div class="position" id="p3@i8">i8</div>
-                        <div class="position" id="p3@i9">i9</div>
-                        <div class="position" id="p3@i0">i0</div>
-                        <div class="position" id="p3@j1">j1</div>
-                        <div class="position" id="p3@j2">j2</div>
-                        <div class="position" id="p3@j3">j3</div>
-                        <div class="position" id="p3@j4">j4</div>
-                        <div class="position" id="p3@j5">j5</div>
-                        <div class="position" id="p3@j6">j6</div>
-                        <div class="position" id="p3@j7">j7</div>
-                        <div class="position" id="p3@j8">j8</div>
-                        <div class="position" id="p3@j9">j9</div>
-                        <div class="position" id="p3@j0">j0</div>
+                    <div class="battleship-board" id="tablero-3-jugadores-1">
+
+                        <div class="position header"></div>
+                        <div class="position header">A</div>
+                        <div class="position header">B</div>
+                        <div class="position header">C</div>
+                        <div class="position header">D</div>
+                        <div class="position header">E</div>
+                        <div class="position header">F</div>
+                        <div class="position header">G</div>
+                        <div class="position header">H</div>
+                        <div class="position header">I</div>
+                        <div class="position header">J</div>
+    
+                        <div class="position header">1</div>
+                        <div class="position" id="p3b1"></div>
+                        <div class="position" id="p3b2"></div>
+                        <div class="position" id="p3b3"></div>
+                        <div class="position" id="p3b4"></div>
+                        <div class="position" id="p3b5"></div>
+                        <div class="position" id="p3b6"></div>
+                        <div class="position" id="p3b7"></div>
+                        <div class="position" id="p3b8"></div>
+                        <div class="position" id="p3b9"></div>
+                        <div class="position" id="p3b0"></div>
+    
+                        <div class="position header">2</div>
+                        <div class="position" id="p3c1"></div>
+                        <div class="position" id="p3c2"></div>
+                        <div class="position" id="p3c3"></div>
+                        <div class="position" id="p3c4"></div>
+                        <div class="position" id="p3c5"></div>
+                        <div class="position" id="p3c6"></div>
+                        <div class="position" id="p3c7"></div>
+                        <div class="position" id="p3c8"></div>
+                        <div class="position" id="p3c9"></div>
+                        <div class="position" id="p3c0"></div>
+            
+                        <div class="position header">3</div>
+                        <div class="position" id="p3d1"></div>
+                        <div class="position" id="p3d2"></div>
+                        <div class="position" id="p3d3"></div>
+                        <div class="position" id="p3d4"></div>
+                        <div class="position" id="p3d5"></div>
+                        <div class="position" id="p3d6"></div>
+                        <div class="position" id="p3d7"></div>
+                        <div class="position" id="p3d8"></div>
+                        <div class="position" id="p3d9"></div>
+                        <div class="position" id="p3d0"></div>
+            
+                        <div class="position header">4</div>
+                        <div class="position" id="p3e1"></div>
+                        <div class="position" id="p3e2"></div>
+                        <div class="position" id="p3e3"></div>
+                        <div class="position" id="p3e4"></div>
+                        <div class="position" id="p3e5"></div>
+                        <div class="position" id="p3e6"></div>
+                        <div class="position" id="p3e7"></div>
+                        <div class="position" id="p3e8"></div>
+                        <div class="position" id="p3e9"></div>
+                        <div class="position" id="p3e0"></div>
+            
+                        <div class="position header">5</div>
+                        <div class="position" id="p3f1"></div>
+                        <div class="position" id="p3f2"></div>
+                        <div class="position" id="p3f3"></div>
+                        <div class="position" id="p3f4"></div>
+                        <div class="position" id="p3f5"></div>
+                        <div class="position" id="p3f6"></div>
+                        <div class="position" id="p3f7"></div>
+                        <div class="position" id="p3f8"></div>
+                        <div class="position" id="p3f9"></div>
+                        <div class="position" id="p3f0"></div>
+            
+                        <div class="position header">6</div>
+                        <div class="position" id="p3g1"></div>
+                        <div class="position" id="p3g2"></div>
+                        <div class="position" id="p3g3"></div>
+                        <div class="position" id="p3g4"></div>
+                        <div class="position" id="p3g5"></div>
+                        <div class="position" id="p3g6"></div>
+                        <div class="position" id="p3g7"></div>
+                        <div class="position" id="p3g8"></div>
+                        <div class="position" id="p3g9"></div>
+                        <div class="position" id="p3g0"></div>
+            
+                        <div class="position header">7</div>
+                        <div class="position" id="p3h1"></div>
+                        <div class="position" id="p3h2"></div>
+                        <div class="position" id="p3h3"></div>
+                        <div class="position" id="p3h4"></div>
+                        <div class="position" id="p3h5"></div>
+                        <div class="position" id="p3h6"></div>
+                        <div class="position" id="p3h7"></div>
+                        <div class="position" id="p3h8"></div>
+                        <div class="position" id="p3h9"></div>
+                        <div class="position" id="p3h0"></div>
+            
+                        <div class="position header">8</div>
+                        <div class="position" id="p3i1"></div>
+                        <div class="position" id="p3i2"></div>
+                        <div class="position" id="p3i3"></div>
+                        <div class="position" id="p3i4"></div>
+                        <div class="position" id="p3i5"></div>
+                        <div class="position" id="p3i6"></div>
+                        <div class="position" id="p3i7"></div>
+                        <div class="position" id="p3i8"></div>
+                        <div class="position" id="p3i9"></div>
+                        <div class="position" id="p3i0"></div>
+            
+                        <div class="position header">9</div>
+                        <div class="position" id="p3j1"></div>
+                        <div class="position" id="p3j2"></div>
+                        <div class="position" id="p3j3"></div>
+                        <div class="position" id="p3j4"></div>
+                        <div class="position" id="p3j5"></div>
+                        <div class="position" id="p3j6"></div>
+                        <div class="position" id="p3j7"></div>
+                        <div class="position" id="p3j8"></div>
+                        <div class="position" id="p3j9"></div>
+                        <div class="position" id="p3j0"></div>
+            
+                        <div class="position header">10</div>
+                        <div class="position" id="p3k1"></div>
+                        <div class="position" id="p3k2"></div>
+                        <div class="position" id="p3k3"></div>
+                        <div class="position" id="p3k4"></div>
+                        <div class="position" id="p3k5"></div>
+                        <div class="position" id="p3k6"></div>
+                        <div class="position" id="p3k7"></div>
+                        <div class="position" id="p3k8"></div>
+                        <div class="position" id="p3k9"></div>
+                        <div class="position" id="p3k0"></div>
+                
                     </div>
                     <div class="table-title">
                         <h3>Tabla Jugador 2.</h3>
                     </div>
-                    <div class="battleship-board">
-                        <div class="position" id="p4@a1">a1</div>
-                        <div class="position" id="p4@a2">a2</div>
-                        <div class="position" id="p4@a3">a3</div>
-                        <div class="position" id="p4@a4">a4</div>
-                        <div class="position" id="p4@a5">a5</div>
-                        <div class="position" id="p4@a6">a6</div>
-                        <div class="position" id="p4@a7">a7</div>
-                        <div class="position" id="p4@a8">a8</div>
-                        <div class="position" id="p4@a9">a9</div>
-                        <div class="position" id="p4@a0">a0</div>
-                        <div class="position" id="p4@b1">b1</div>
-                        <div class="position" id="p4@b2">b2</div>
-                        <div class="position" id="p4@b3">b3</div>
-                        <div class="position" id="p4@b4">b4</div>
-                        <div class="position" id="p4@b5">b5</div>
-                        <div class="position" id="p4@b6">b6</div>
-                        <div class="position" id="p4@b7">b7</div>
-                        <div class="position" id="p4@b8">b8</div>
-                        <div class="position" id="p4@b9">b9</div>
-                        <div class="position" id="p4@b0">b0</div>
-                        <div class="position" id="p4@c1">c1</div>
-                        <div class="position" id="p4@c2">c2</div>
-                        <div class="position" id="p4@c3">c3</div>
-                        <div class="position" id="p4@c4">c4</div>
-                        <div class="position" id="p4@c5">c5</div>
-                        <div class="position" id="p4@c6">c6</div>
-                        <div class="position" id="p4@c7">c7</div>
-                        <div class="position" id="p4@c8">c8</div>
-                        <div class="position" id="p4@c9">c9</div>
-                        <div class="position" id="p4@c0">c0</div>
-                        <div class="position" id="p4@d1">d1</div>
-                        <div class="position" id="p4@d2">d2</div>
-                        <div class="position" id="p4@d3">d3</div>
-                        <div class="position" id="p4@d4">d4</div>
-                        <div class="position" id="p4@d5">d5</div>
-                        <div class="position" id="p4@d6">d6</div>
-                        <div class="position" id="p4@d7">d7</div>
-                        <div class="position" id="p4@d8">d8</div>
-                        <div class="position" id="p4@d9">d9</div>
-                        <div class="position" id="p4@d0">d0</div>
-                        <div class="position" id="p4@e1">e1</div>
-                        <div class="position" id="p4@e2">e2</div>
-                        <div class="position" id="p4@e3">e3</div>
-                        <div class="position" id="p4@e4">e4</div>
-                        <div class="position" id="p4@e5">e5</div>
-                        <div class="position" id="p4@e6">e6</div>
-                        <div class="position" id="p4@e7">e7</div>
-                        <div class="position" id="p4@e8">e8</div>
-                        <div class="position" id="p4@e9">e9</div>
-                        <div class="position" id="p4@e0">e0</div>
-                        <div class="position" id="p4@f1">f1</div>
-                        <div class="position" id="p4@f2">f2</div>
-                        <div class="position" id="p4@f3">f3</div>
-                        <div class="position" id="p4@f4">f4</div>
-                        <div class="position" id="p4@f5">f5</div>
-                        <div class="position" id="p4@f6">f6</div>
-                        <div class="position" id="p4@f7">f7</div>
-                        <div class="position" id="p4@f8">f8</div>
-                        <div class="position" id="p4@f9">f9</div>
-                        <div class="position" id="p4@f0">f0</div>
-                        <div class="position" id="p4@g1">g1</div>
-                        <div class="position" id="p4@g2">g2</div>
-                        <div class="position" id="p4@g3">g3</div>
-                        <div class="position" id="p4@g4">g4</div>
-                        <div class="position" id="p4@g5">g5</div>
-                        <div class="position" id="p4@g6">g6</div>
-                        <div class="position" id="p4@g7">g7</div>
-                        <div class="position" id="p4@g8">g8</div>
-                        <div class="position" id="p4@g9">g9</div>
-                        <div class="position" id="p4@g0">g0</div>
-                        <div class="position" id="p4@h1">h1</div>
-                        <div class="position" id="p4@h2">h2</div>
-                        <div class="position" id="p4@h3">h3</div>
-                        <div class="position" id="p4@h4">h4</div>
-                        <div class="position" id="p4@h5">h5</div>
-                        <div class="position" id="p4@h6">h6</div>
-                        <div class="position" id="p4@h7">h7</div>
-                        <div class="position" id="p4@h8">h8</div>
-                        <div class="position" id="p4@h9">h9</div>
-                        <div class="position" id="p4@h0">h0</div>
-                        <div class="position" id="p4@i1">i1</div>
-                        <div class="position" id="p4@i2">i2</div>
-                        <div class="position" id="p4@i3">i3</div>
-                        <div class="position" id="p4@i4">i4</div>
-                        <div class="position" id="p4@i5">i5</div>
-                        <div class="position" id="p4@i6">i6</div>
-                        <div class="position" id="p4@i7">i7</div>
-                        <div class="position" id="p4@i8">i8</div>
-                        <div class="position" id="p4@i9">i9</div>
-                        <div class="position" id="p4@i0">i0</div>
-                        <div class="position" id="p4@j1">j1</div>
-                        <div class="position" id="p4@j2">j2</div>
-                        <div class="position" id="p4@j3">j3</div>
-                        <div class="position" id="p4@j4">j4</div>
-                        <div class="position" id="p4@j5">j5</div>
-                        <div class="position" id="p4@j6">j6</div>
-                        <div class="position" id="p4@j7">j7</div>
-                        <div class="position" id="p4@j8">j8</div>
-                        <div class="position" id="p4@j9">j9</div>
-                        <div class="position" id="p4@j0">j0</div>
+                    <div class="battleship-board" id="tablero-3-jugadores-2">
+
+                        <div class="position header"></div>
+                        <div class="position header">A</div>
+                        <div class="position header">B</div>
+                        <div class="position header">C</div>
+                        <div class="position header">D</div>
+                        <div class="position header">E</div>
+                        <div class="position header">F</div>
+                        <div class="position header">G</div>
+                        <div class="position header">H</div>
+                        <div class="position header">I</div>
+                        <div class="position header">J</div>
+    
+                        <div class="position header">1</div>
+                        <div class="position" id="p3b1"></div>
+                        <div class="position" id="p3b2"></div>
+                        <div class="position" id="p3b3"></div>
+                        <div class="position" id="p3b4"></div>
+                        <div class="position" id="p3b5"></div>
+                        <div class="position" id="p3b6"></div>
+                        <div class="position" id="p3b7"></div>
+                        <div class="position" id="p3b8"></div>
+                        <div class="position" id="p3b9"></div>
+                        <div class="position" id="p3b0"></div>
+    
+                        <div class="position header">2</div>
+                        <div class="position" id="p3c1"></div>
+                        <div class="position" id="p3c2"></div>
+                        <div class="position" id="p3c3"></div>
+                        <div class="position" id="p3c4"></div>
+                        <div class="position" id="p3c5"></div>
+                        <div class="position" id="p3c6"></div>
+                        <div class="position" id="p3c7"></div>
+                        <div class="position" id="p3c8"></div>
+                        <div class="position" id="p3c9"></div>
+                        <div class="position" id="p3c0"></div>
+            
+                        <div class="position header">3</div>
+                        <div class="position" id="p3d1"></div>
+                        <div class="position" id="p3d2"></div>
+                        <div class="position" id="p3d3"></div>
+                        <div class="position" id="p3d4"></div>
+                        <div class="position" id="p3d5"></div>
+                        <div class="position" id="p3d6"></div>
+                        <div class="position" id="p3d7"></div>
+                        <div class="position" id="p3d8"></div>
+                        <div class="position" id="p3d9"></div>
+                        <div class="position" id="p3d0"></div>
+            
+                        <div class="position header">4</div>
+                        <div class="position" id="p3e1"></div>
+                        <div class="position" id="p3e2"></div>
+                        <div class="position" id="p3e3"></div>
+                        <div class="position" id="p3e4"></div>
+                        <div class="position" id="p3e5"></div>
+                        <div class="position" id="p3e6"></div>
+                        <div class="position" id="p3e7"></div>
+                        <div class="position" id="p3e8"></div>
+                        <div class="position" id="p3e9"></div>
+                        <div class="position" id="p3e0"></div>
+            
+                        <div class="position header">5</div>
+                        <div class="position" id="p3f1"></div>
+                        <div class="position" id="p3f2"></div>
+                        <div class="position" id="p3f3"></div>
+                        <div class="position" id="p3f4"></div>
+                        <div class="position" id="p3f5"></div>
+                        <div class="position" id="p3f6"></div>
+                        <div class="position" id="p3f7"></div>
+                        <div class="position" id="p3f8"></div>
+                        <div class="position" id="p3f9"></div>
+                        <div class="position" id="p3f0"></div>
+            
+                        <div class="position header">6</div>
+                        <div class="position" id="p3g1"></div>
+                        <div class="position" id="p3g2"></div>
+                        <div class="position" id="p3g3"></div>
+                        <div class="position" id="p3g4"></div>
+                        <div class="position" id="p3g5"></div>
+                        <div class="position" id="p3g6"></div>
+                        <div class="position" id="p3g7"></div>
+                        <div class="position" id="p3g8"></div>
+                        <div class="position" id="p3g9"></div>
+                        <div class="position" id="p3g0"></div>
+            
+                        <div class="position header">7</div>
+                        <div class="position" id="p3h1"></div>
+                        <div class="position" id="p3h2"></div>
+                        <div class="position" id="p3h3"></div>
+                        <div class="position" id="p3h4"></div>
+                        <div class="position" id="p3h5"></div>
+                        <div class="position" id="p3h6"></div>
+                        <div class="position" id="p3h7"></div>
+                        <div class="position" id="p3h8"></div>
+                        <div class="position" id="p3h9"></div>
+                        <div class="position" id="p3h0"></div>
+            
+                        <div class="position header">8</div>
+                        <div class="position" id="p3i1"></div>
+                        <div class="position" id="p3i2"></div>
+                        <div class="position" id="p3i3"></div>
+                        <div class="position" id="p3i4"></div>
+                        <div class="position" id="p3i5"></div>
+                        <div class="position" id="p3i6"></div>
+                        <div class="position" id="p3i7"></div>
+                        <div class="position" id="p3i8"></div>
+                        <div class="position" id="p3i9"></div>
+                        <div class="position" id="p3i0"></div>
+            
+                        <div class="position header">9</div>
+                        <div class="position" id="p3j1"></div>
+                        <div class="position" id="p3j2"></div>
+                        <div class="position" id="p3j3"></div>
+                        <div class="position" id="p3j4"></div>
+                        <div class="position" id="p3j5"></div>
+                        <div class="position" id="p3j6"></div>
+                        <div class="position" id="p3j7"></div>
+                        <div class="position" id="p3j8"></div>
+                        <div class="position" id="p3j9"></div>
+                        <div class="position" id="p3j0"></div>
+            
+                        <div class="position header">10</div>
+                        <div class="position" id="p3k1"></div>
+                        <div class="position" id="p3k2"></div>
+                        <div class="position" id="p3k3"></div>
+                        <div class="position" id="p3k4"></div>
+                        <div class="position" id="p3k5"></div>
+                        <div class="position" id="p3k6"></div>
+                        <div class="position" id="p3k7"></div>
+                        <div class="position" id="p3k8"></div>
+                        <div class="position" id="p3k9"></div>
+                        <div class="position" id="p3k0"></div>
+                
                     </div>
                     <div class="table-title">
                         <h3>Tabla Jugador 3.</h3>
                     </div>
-                    <div class="battleship-board">
-                        <div class="position" id="p5@a1">a1</div>
-                        <div class="position" id="p5@a2">a2</div>
-                        <div class="position" id="p5@a3">a3</div>
-                        <div class="position" id="p5@a4">a4</div>
-                        <div class="position" id="p5@a5">a5</div>
-                        <div class="position" id="p5@a6">a6</div>
-                        <div class="position" id="p5@a7">a7</div>
-                        <div class="position" id="p5@a8">a8</div>
-                        <div class="position" id="p5@a9">a9</div>
-                        <div class="position" id="p5@a0">a0</div>
-                        <div class="position" id="p5@b1">b1</div>
-                        <div class="position" id="p5@b2">b2</div>
-                        <div class="position" id="p5@b3">b3</div>
-                        <div class="position" id="p5@b4">b4</div>
-                        <div class="position" id="p5@b5">b5</div>
-                        <div class="position" id="p5@b6">b6</div>
-                        <div class="position" id="p5@b7">b7</div>
-                        <div class="position" id="p5@b8">b8</div>
-                        <div class="position" id="p5@b9">b9</div>
-                        <div class="position" id="p5@b0">b0</div>
-                        <div class="position" id="p5@c1">c1</div>
-                        <div class="position" id="p5@c2">c2</div>
-                        <div class="position" id="p5@c3">c3</div>
-                        <div class="position" id="p5@c4">c4</div>
-                        <div class="position" id="p5@c5">c5</div>
-                        <div class="position" id="p5@c6">c6</div>
-                        <div class="position" id="p5@c7">c7</div>
-                        <div class="position" id="p5@c8">c8</div>
-                        <div class="position" id="p5@c9">c9</div>
-                        <div class="position" id="p5@c0">c0</div>
-                        <div class="position" id="p5@d1">d1</div>
-                        <div class="position" id="p5@d2">d2</div>
-                        <div class="position" id="p5@d3">d3</div>
-                        <div class="position" id="p5@d4">d4</div>
-                        <div class="position" id="p5@d5">d5</div>
-                        <div class="position" id="p5@d6">d6</div>
-                        <div class="position" id="p5@d7">d7</div>
-                        <div class="position" id="p5@d8">d8</div>
-                        <div class="position" id="p5@d9">d9</div>
-                        <div class="position" id="p5@d0">d0</div>
-                        <div class="position" id="p5@e1">e1</div>
-                        <div class="position" id="p5@e2">e2</div>
-                        <div class="position" id="p5@e3">e3</div>
-                        <div class="position" id="p5@e4">e4</div>
-                        <div class="position" id="p5@e5">e5</div>
-                        <div class="position" id="p5@e6">e6</div>
-                        <div class="position" id="p5@e7">e7</div>
-                        <div class="position" id="p5@e8">e8</div>
-                        <div class="position" id="p5@e9">e9</div>
-                        <div class="position" id="p5@e0">e0</div>
-                        <div class="position" id="p5@f1">f1</div>
-                        <div class="position" id="p5@f2">f2</div>
-                        <div class="position" id="p5@f3">f3</div>
-                        <div class="position" id="p5@f4">f4</div>
-                        <div class="position" id="p5@f5">f5</div>
-                        <div class="position" id="p5@f6">f6</div>
-                        <div class="position" id="p5@f7">f7</div>
-                        <div class="position" id="p5@f8">f8</div>
-                        <div class="position" id="p5@f9">f9</div>
-                        <div class="position" id="p5@f0">f0</div>
-                        <div class="position" id="p5@g1">g1</div>
-                        <div class="position" id="p5@g2">g2</div>
-                        <div class="position" id="p5@g3">g3</div>
-                        <div class="position" id="p5@g4">g4</div>
-                        <div class="position" id="p5@g5">g5</div>
-                        <div class="position" id="p5@g6">g6</div>
-                        <div class="position" id="p5@g7">g7</div>
-                        <div class="position" id="p5@g8">g8</div>
-                        <div class="position" id="p5@g9">g9</div>
-                        <div class="position" id="p5@g0">g0</div>
-                        <div class="position" id="p5@h1">h1</div>
-                        <div class="position" id="p5@h2">h2</div>
-                        <div class="position" id="p5@h3">h3</div>
-                        <div class="position" id="p5@h4">h4</div>
-                        <div class="position" id="p5@h5">h5</div>
-                        <div class="position" id="p5@h6">h6</div>
-                        <div class="position" id="p5@h7">h7</div>
-                        <div class="position" id="p5@h8">h8</div>
-                        <div class="position" id="p5@h9">h9</div>
-                        <div class="position" id="p5@h0">h0</div>
-                        <div class="position" id="p5@i1">i1</div>
-                        <div class="position" id="p5@i2">i2</div>
-                        <div class="position" id="p5@i3">i3</div>
-                        <div class="position" id="p5@i4">i4</div>
-                        <div class="position" id="p5@i5">i5</div>
-                        <div class="position" id="p5@i6">i6</div>
-                        <div class="position" id="p5@i7">i7</div>
-                        <div class="position" id="p5@i8">i8</div>
-                        <div class="position" id="p5@i9">i9</div>
-                        <div class="position" id="p5@i0">i0</div>
-                        <div class="position" id="p5@j1">j1</div>
-                        <div class="position" id="p5@j2">j2</div>
-                        <div class="position" id="p5@j3">j3</div>
-                        <div class="position" id="p5@j4">j4</div>
-                        <div class="position" id="p5@j5">j5</div>
-                        <div class="position" id="p5@j6">j6</div>
-                        <div class="position" id="p5@j7">j7</div>
-                        <div class="position" id="p5@j8">j8</div>
-                        <div class="position" id="p5@j9">j9</div>
-                        <div class="position" id="p5@j0">j0</div>
+                    <div class="battleship-board" id="tablero-3-jugadores-3">
+
+                        <div class="position header"></div>
+                        <div class="position header">A</div>
+                        <div class="position header">B</div>
+                        <div class="position header">C</div>
+                        <div class="position header">D</div>
+                        <div class="position header">E</div>
+                        <div class="position header">F</div>
+                        <div class="position header">G</div>
+                        <div class="position header">H</div>
+                        <div class="position header">I</div>
+                        <div class="position header">J</div>
+    
+                        <div class="position header">1</div>
+                        <div class="position" id="p3b1"></div>
+                        <div class="position" id="p3b2"></div>
+                        <div class="position" id="p3b3"></div>
+                        <div class="position" id="p3b4"></div>
+                        <div class="position" id="p3b5"></div>
+                        <div class="position" id="p3b6"></div>
+                        <div class="position" id="p3b7"></div>
+                        <div class="position" id="p3b8"></div>
+                        <div class="position" id="p3b9"></div>
+                        <div class="position" id="p3b0"></div>
+    
+                        <div class="position header">2</div>
+                        <div class="position" id="p3c1"></div>
+                        <div class="position" id="p3c2"></div>
+                        <div class="position" id="p3c3"></div>
+                        <div class="position" id="p3c4"></div>
+                        <div class="position" id="p3c5"></div>
+                        <div class="position" id="p3c6"></div>
+                        <div class="position" id="p3c7"></div>
+                        <div class="position" id="p3c8"></div>
+                        <div class="position" id="p3c9"></div>
+                        <div class="position" id="p3c0"></div>
+            
+                        <div class="position header">3</div>
+                        <div class="position" id="p3d1"></div>
+                        <div class="position" id="p3d2"></div>
+                        <div class="position" id="p3d3"></div>
+                        <div class="position" id="p3d4"></div>
+                        <div class="position" id="p3d5"></div>
+                        <div class="position" id="p3d6"></div>
+                        <div class="position" id="p3d7"></div>
+                        <div class="position" id="p3d8"></div>
+                        <div class="position" id="p3d9"></div>
+                        <div class="position" id="p3d0"></div>
+            
+                        <div class="position header">4</div>
+                        <div class="position" id="p3e1"></div>
+                        <div class="position" id="p3e2"></div>
+                        <div class="position" id="p3e3"></div>
+                        <div class="position" id="p3e4"></div>
+                        <div class="position" id="p3e5"></div>
+                        <div class="position" id="p3e6"></div>
+                        <div class="position" id="p3e7"></div>
+                        <div class="position" id="p3e8"></div>
+                        <div class="position" id="p3e9"></div>
+                        <div class="position" id="p3e0"></div>
+            
+                        <div class="position header">5</div>
+                        <div class="position" id="p3f1"></div>
+                        <div class="position" id="p3f2"></div>
+                        <div class="position" id="p3f3"></div>
+                        <div class="position" id="p3f4"></div>
+                        <div class="position" id="p3f5"></div>
+                        <div class="position" id="p3f6"></div>
+                        <div class="position" id="p3f7"></div>
+                        <div class="position" id="p3f8"></div>
+                        <div class="position" id="p3f9"></div>
+                        <div class="position" id="p3f0"></div>
+            
+                        <div class="position header">6</div>
+                        <div class="position" id="p3g1"></div>
+                        <div class="position" id="p3g2"></div>
+                        <div class="position" id="p3g3"></div>
+                        <div class="position" id="p3g4"></div>
+                        <div class="position" id="p3g5"></div>
+                        <div class="position" id="p3g6"></div>
+                        <div class="position" id="p3g7"></div>
+                        <div class="position" id="p3g8"></div>
+                        <div class="position" id="p3g9"></div>
+                        <div class="position" id="p3g0"></div>
+            
+                        <div class="position header">7</div>
+                        <div class="position" id="p3h1"></div>
+                        <div class="position" id="p3h2"></div>
+                        <div class="position" id="p3h3"></div>
+                        <div class="position" id="p3h4"></div>
+                        <div class="position" id="p3h5"></div>
+                        <div class="position" id="p3h6"></div>
+                        <div class="position" id="p3h7"></div>
+                        <div class="position" id="p3h8"></div>
+                        <div class="position" id="p3h9"></div>
+                        <div class="position" id="p3h0"></div>
+            
+                        <div class="position header">8</div>
+                        <div class="position" id="p3i1"></div>
+                        <div class="position" id="p3i2"></div>
+                        <div class="position" id="p3i3"></div>
+                        <div class="position" id="p3i4"></div>
+                        <div class="position" id="p3i5"></div>
+                        <div class="position" id="p3i6"></div>
+                        <div class="position" id="p3i7"></div>
+                        <div class="position" id="p3i8"></div>
+                        <div class="position" id="p3i9"></div>
+                        <div class="position" id="p3i0"></div>
+            
+                        <div class="position header">9</div>
+                        <div class="position" id="p3j1"></div>
+                        <div class="position" id="p3j2"></div>
+                        <div class="position" id="p3j3"></div>
+                        <div class="position" id="p3j4"></div>
+                        <div class="position" id="p3j5"></div>
+                        <div class="position" id="p3j6"></div>
+                        <div class="position" id="p3j7"></div>
+                        <div class="position" id="p3j8"></div>
+                        <div class="position" id="p3j9"></div>
+                        <div class="position" id="p3j0"></div>
+            
+                        <div class="position header">10</div>
+                        <div class="position" id="p3k1"></div>
+                        <div class="position" id="p3k2"></div>
+                        <div class="position" id="p3k3"></div>
+                        <div class="position" id="p3k4"></div>
+                        <div class="position" id="p3k5"></div>
+                        <div class="position" id="p3k6"></div>
+                        <div class="position" id="p3k7"></div>
+                        <div class="position" id="p3k8"></div>
+                        <div class="position" id="p3k9"></div>
+                        <div class="position" id="p3k0"></div>
+                
                     </div>
                     <div class="back-to-top">
                         <p><a href="#title">Back to Top</a></p>
@@ -825,428 +990,561 @@
                     <div class="table-title">
                         <h3>Tabla Jugador 1.</h3>
                     </div>
-                    <div class="battleship-board">
-                        <div class="position" id="p6@a1">a1</div>
-                        <div class="position" id="p6@a2">a2</div>
-                        <div class="position" id="p6@a3">a3</div>
-                        <div class="position" id="p6@a4">a4</div>
-                        <div class="position" id="p6@a5">a5</div>
-                        <div class="position" id="p6@a6">a6</div>
-                        <div class="position" id="p6@a7">a7</div>
-                        <div class="position" id="p6@a8">a8</div>
-                        <div class="position" id="p6@a9">a9</div>
-                        <div class="position" id="p6@a0">a0</div>
-                        <div class="position" id="p6@b1">b1</div>
-                        <div class="position" id="p6@b2">b2</div>
-                        <div class="position" id="p6@b3">b3</div>
-                        <div class="position" id="p6@b4">b4</div>
-                        <div class="position" id="p6@b5">b5</div>
-                        <div class="position" id="p6@b6">b6</div>
-                        <div class="position" id="p6@b7">b7</div>
-                        <div class="position" id="p6@b8">b8</div>
-                        <div class="position" id="p6@b9">b9</div>
-                        <div class="position" id="p6@b0">b0</div>
-                        <div class="position" id="p6@c1">c1</div>
-                        <div class="position" id="p6@c2">c2</div>
-                        <div class="position" id="p6@c3">c3</div>
-                        <div class="position" id="p6@c4">c4</div>
-                        <div class="position" id="p6@c5">c5</div>
-                        <div class="position" id="p6@c6">c6</div>
-                        <div class="position" id="p6@c7">c7</div>
-                        <div class="position" id="p6@c8">c8</div>
-                        <div class="position" id="p6@c9">c9</div>
-                        <div class="position" id="p6@c0">c0</div>
-                        <div class="position" id="p6@d1">d1</div>
-                        <div class="position" id="p6@d2">d2</div>
-                        <div class="position" id="p6@d3">d3</div>
-                        <div class="position" id="p6@d4">d4</div>
-                        <div class="position" id="p6@d5">d5</div>
-                        <div class="position" id="p6@d6">d6</div>
-                        <div class="position" id="p6@d7">d7</div>
-                        <div class="position" id="p6@d8">d8</div>
-                        <div class="position" id="p6@d9">d9</div>
-                        <div class="position" id="p6@d0">d0</div>
-                        <div class="position" id="p6@e1">e1</div>
-                        <div class="position" id="p6@e2">e2</div>
-                        <div class="position" id="p6@e3">e3</div>
-                        <div class="position" id="p6@e4">e4</div>
-                        <div class="position" id="p6@e5">e5</div>
-                        <div class="position" id="p6@e6">e6</div>
-                        <div class="position" id="p6@e7">e7</div>
-                        <div class="position" id="p6@e8">e8</div>
-                        <div class="position" id="p6@e9">e9</div>
-                        <div class="position" id="p6@e0">e0</div>
-                        <div class="position" id="p6@f1">f1</div>
-                        <div class="position" id="p6@f2">f2</div>
-                        <div class="position" id="p6@f3">f3</div>
-                        <div class="position" id="p6@f4">f4</div>
-                        <div class="position" id="p6@f5">f5</div>
-                        <div class="position" id="p6@f6">f6</div>
-                        <div class="position" id="p6@f7">f7</div>
-                        <div class="position" id="p6@f8">f8</div>
-                        <div class="position" id="p6@f9">f9</div>
-                        <div class="position" id="p6@f0">f0</div>
-                        <div class="position" id="p6@g1">g1</div>
-                        <div class="position" id="p6@g2">g2</div>
-                        <div class="position" id="p6@g3">g3</div>
-                        <div class="position" id="p6@g4">g4</div>
-                        <div class="position" id="p6@g5">g5</div>
-                        <div class="position" id="p6@g6">g6</div>
-                        <div class="position" id="p6@g7">g7</div>
-                        <div class="position" id="p6@g8">g8</div>
-                        <div class="position" id="p6@g9">g9</div>
-                        <div class="position" id="p6@g0">g0</div>
-                        <div class="position" id="p6@h1">h1</div>
-                        <div class="position" id="p6@h2">h2</div>
-                        <div class="position" id="p6@h3">h3</div>
-                        <div class="position" id="p6@h4">h4</div>
-                        <div class="position" id="p6@h5">h5</div>
-                        <div class="position" id="p6@h6">h6</div>
-                        <div class="position" id="p6@h7">h7</div>
-                        <div class="position" id="p6@h8">h8</div>
-                        <div class="position" id="p6@h9">h9</div>
-                        <div class="position" id="p6@h0">h0</div>
-                        <div class="position" id="p6@i1">i1</div>
-                        <div class="position" id="p6@i2">i2</div>
-                        <div class="position" id="p6@i3">i3</div>
-                        <div class="position" id="p6@i4">i4</div>
-                        <div class="position" id="p6@i5">i5</div>
-                        <div class="position" id="p6@i6">i6</div>
-                        <div class="position" id="p6@i7">i7</div>
-                        <div class="position" id="p6@i8">i8</div>
-                        <div class="position" id="p6@i9">i9</div>
-                        <div class="position" id="p6@i0">i0</div>
-                        <div class="position" id="p6@j1">j1</div>
-                        <div class="position" id="p6@j2">j2</div>
-                        <div class="position" id="p6@j3">j3</div>
-                        <div class="position" id="p6@j4">j4</div>
-                        <div class="position" id="p6@j5">j5</div>
-                        <div class="position" id="p6@j6">j6</div>
-                        <div class="position" id="p6@j7">j7</div>
-                        <div class="position" id="p6@j8">j8</div>
-                        <div class="position" id="p6@j9">j9</div>
-                        <div class="position" id="p6@j0">j0</div>
+                    <div class="battleship-board" id="tablero-4-jugadores-1">
+
+                        <div class="position header"></div>
+                        <div class="position header">A</div>
+                        <div class="position header">B</div>
+                        <div class="position header">C</div>
+                        <div class="position header">D</div>
+                        <div class="position header">E</div>
+                        <div class="position header">F</div>
+                        <div class="position header">G</div>
+                        <div class="position header">H</div>
+                        <div class="position header">I</div>
+                        <div class="position header">J</div>
+    
+                        <div class="position header">1</div>
+                        <div class="position" id="p3b1"></div>
+                        <div class="position" id="p3b2"></div>
+                        <div class="position" id="p3b3"></div>
+                        <div class="position" id="p3b4"></div>
+                        <div class="position" id="p3b5"></div>
+                        <div class="position" id="p3b6"></div>
+                        <div class="position" id="p3b7"></div>
+                        <div class="position" id="p3b8"></div>
+                        <div class="position" id="p3b9"></div>
+                        <div class="position" id="p3b0"></div>
+    
+                        <div class="position header">2</div>
+                        <div class="position" id="p3c1"></div>
+                        <div class="position" id="p3c2"></div>
+                        <div class="position" id="p3c3"></div>
+                        <div class="position" id="p3c4"></div>
+                        <div class="position" id="p3c5"></div>
+                        <div class="position" id="p3c6"></div>
+                        <div class="position" id="p3c7"></div>
+                        <div class="position" id="p3c8"></div>
+                        <div class="position" id="p3c9"></div>
+                        <div class="position" id="p3c0"></div>
+            
+                        <div class="position header">3</div>
+                        <div class="position" id="p3d1"></div>
+                        <div class="position" id="p3d2"></div>
+                        <div class="position" id="p3d3"></div>
+                        <div class="position" id="p3d4"></div>
+                        <div class="position" id="p3d5"></div>
+                        <div class="position" id="p3d6"></div>
+                        <div class="position" id="p3d7"></div>
+                        <div class="position" id="p3d8"></div>
+                        <div class="position" id="p3d9"></div>
+                        <div class="position" id="p3d0"></div>
+            
+                        <div class="position header">4</div>
+                        <div class="position" id="p3e1"></div>
+                        <div class="position" id="p3e2"></div>
+                        <div class="position" id="p3e3"></div>
+                        <div class="position" id="p3e4"></div>
+                        <div class="position" id="p3e5"></div>
+                        <div class="position" id="p3e6"></div>
+                        <div class="position" id="p3e7"></div>
+                        <div class="position" id="p3e8"></div>
+                        <div class="position" id="p3e9"></div>
+                        <div class="position" id="p3e0"></div>
+            
+                        <div class="position header">5</div>
+                        <div class="position" id="p3f1"></div>
+                        <div class="position" id="p3f2"></div>
+                        <div class="position" id="p3f3"></div>
+                        <div class="position" id="p3f4"></div>
+                        <div class="position" id="p3f5"></div>
+                        <div class="position" id="p3f6"></div>
+                        <div class="position" id="p3f7"></div>
+                        <div class="position" id="p3f8"></div>
+                        <div class="position" id="p3f9"></div>
+                        <div class="position" id="p3f0"></div>
+            
+                        <div class="position header">6</div>
+                        <div class="position" id="p3g1"></div>
+                        <div class="position" id="p3g2"></div>
+                        <div class="position" id="p3g3"></div>
+                        <div class="position" id="p3g4"></div>
+                        <div class="position" id="p3g5"></div>
+                        <div class="position" id="p3g6"></div>
+                        <div class="position" id="p3g7"></div>
+                        <div class="position" id="p3g8"></div>
+                        <div class="position" id="p3g9"></div>
+                        <div class="position" id="p3g0"></div>
+            
+                        <div class="position header">7</div>
+                        <div class="position" id="p3h1"></div>
+                        <div class="position" id="p3h2"></div>
+                        <div class="position" id="p3h3"></div>
+                        <div class="position" id="p3h4"></div>
+                        <div class="position" id="p3h5"></div>
+                        <div class="position" id="p3h6"></div>
+                        <div class="position" id="p3h7"></div>
+                        <div class="position" id="p3h8"></div>
+                        <div class="position" id="p3h9"></div>
+                        <div class="position" id="p3h0"></div>
+            
+                        <div class="position header">8</div>
+                        <div class="position" id="p3i1"></div>
+                        <div class="position" id="p3i2"></div>
+                        <div class="position" id="p3i3"></div>
+                        <div class="position" id="p3i4"></div>
+                        <div class="position" id="p3i5"></div>
+                        <div class="position" id="p3i6"></div>
+                        <div class="position" id="p3i7"></div>
+                        <div class="position" id="p3i8"></div>
+                        <div class="position" id="p3i9"></div>
+                        <div class="position" id="p3i0"></div>
+            
+                        <div class="position header">9</div>
+                        <div class="position" id="p3j1"></div>
+                        <div class="position" id="p3j2"></div>
+                        <div class="position" id="p3j3"></div>
+                        <div class="position" id="p3j4"></div>
+                        <div class="position" id="p3j5"></div>
+                        <div class="position" id="p3j6"></div>
+                        <div class="position" id="p3j7"></div>
+                        <div class="position" id="p3j8"></div>
+                        <div class="position" id="p3j9"></div>
+                        <div class="position" id="p3j0"></div>
+            
+                        <div class="position header">10</div>
+                        <div class="position" id="p3k1"></div>
+                        <div class="position" id="p3k2"></div>
+                        <div class="position" id="p3k3"></div>
+                        <div class="position" id="p3k4"></div>
+                        <div class="position" id="p3k5"></div>
+                        <div class="position" id="p3k6"></div>
+                        <div class="position" id="p3k7"></div>
+                        <div class="position" id="p3k8"></div>
+                        <div class="position" id="p3k9"></div>
+                        <div class="position" id="p3k0"></div>
+                
                     </div>
                     <div class="table-title">
                         <h3>Tabla Jugador 2.</h3>
                     </div>
-                    <div class="battleship-board">
-                        <div class="position" id="p7@a1">a1</div>
-                        <div class="position" id="p7@a2">a2</div>
-                        <div class="position" id="p7@a3">a3</div>
-                        <div class="position" id="p7@a4">a4</div>
-                        <div class="position" id="p7@a5">a5</div>
-                        <div class="position" id="p7@a6">a6</div>
-                        <div class="position" id="p7@a7">a7</div>
-                        <div class="position" id="p7@a8">a8</div>
-                        <div class="position" id="p7@a9">a9</div>
-                        <div class="position" id="p7@a0">a0</div>
-                        <div class="position" id="p7@b1">b1</div>
-                        <div class="position" id="p7@b2">b2</div>
-                        <div class="position" id="p7@b3">b3</div>
-                        <div class="position" id="p7@b4">b4</div>
-                        <div class="position" id="p7@b5">b5</div>
-                        <div class="position" id="p7@b6">b6</div>
-                        <div class="position" id="p7@b7">b7</div>
-                        <div class="position" id="p7@b8">b8</div>
-                        <div class="position" id="p7@b9">b9</div>
-                        <div class="position" id="p7@b0">b0</div>
-                        <div class="position" id="p7@c1">c1</div>
-                        <div class="position" id="p7@c2">c2</div>
-                        <div class="position" id="p7@c3">c3</div>
-                        <div class="position" id="p7@c4">c4</div>
-                        <div class="position" id="p7@c5">c5</div>
-                        <div class="position" id="p7@c6">c6</div>
-                        <div class="position" id="p7@c7">c7</div>
-                        <div class="position" id="p7@c8">c8</div>
-                        <div class="position" id="p7@c9">c9</div>
-                        <div class="position" id="p7@c0">c0</div>
-                        <div class="position" id="p7@d1">d1</div>
-                        <div class="position" id="p7@d2">d2</div>
-                        <div class="position" id="p7@d3">d3</div>
-                        <div class="position" id="p7@d4">d4</div>
-                        <div class="position" id="p7@d5">d5</div>
-                        <div class="position" id="p7@d6">d6</div>
-                        <div class="position" id="p7@d7">d7</div>
-                        <div class="position" id="p7@d8">d8</div>
-                        <div class="position" id="p7@d9">d9</div>
-                        <div class="position" id="p7@d0">d0</div>
-                        <div class="position" id="p7@e1">e1</div>
-                        <div class="position" id="p7@e2">e2</div>
-                        <div class="position" id="p7@e3">e3</div>
-                        <div class="position" id="p7@e4">e4</div>
-                        <div class="position" id="p7@e5">e5</div>
-                        <div class="position" id="p7@e6">e6</div>
-                        <div class="position" id="p7@e7">e7</div>
-                        <div class="position" id="p7@e8">e8</div>
-                        <div class="position" id="p7@e9">e9</div>
-                        <div class="position" id="p7@e0">e0</div>
-                        <div class="position" id="p7@f1">f1</div>
-                        <div class="position" id="p7@f2">f2</div>
-                        <div class="position" id="p7@f3">f3</div>
-                        <div class="position" id="p7@f4">f4</div>
-                        <div class="position" id="p7@f5">f5</div>
-                        <div class="position" id="p7@f6">f6</div>
-                        <div class="position" id="p7@f7">f7</div>
-                        <div class="position" id="p7@f8">f8</div>
-                        <div class="position" id="p7@f9">f9</div>
-                        <div class="position" id="p7@f0">f0</div>
-                        <div class="position" id="p7@g1">g1</div>
-                        <div class="position" id="p7@g2">g2</div>
-                        <div class="position" id="p7@g3">g3</div>
-                        <div class="position" id="p7@g4">g4</div>
-                        <div class="position" id="p7@g5">g5</div>
-                        <div class="position" id="p7@g6">g6</div>
-                        <div class="position" id="p7@g7">g7</div>
-                        <div class="position" id="p7@g8">g8</div>
-                        <div class="position" id="p7@g9">g9</div>
-                        <div class="position" id="p7@g0">g0</div>
-                        <div class="position" id="p7@h1">h1</div>
-                        <div class="position" id="p7@h2">h2</div>
-                        <div class="position" id="p7@h3">h3</div>
-                        <div class="position" id="p7@h4">h4</div>
-                        <div class="position" id="p7@h5">h5</div>
-                        <div class="position" id="p7@h6">h6</div>
-                        <div class="position" id="p7@h7">h7</div>
-                        <div class="position" id="p7@h8">h8</div>
-                        <div class="position" id="p7@h9">h9</div>
-                        <div class="position" id="p7@h0">h0</div>
-                        <div class="position" id="p7@i1">i1</div>
-                        <div class="position" id="p7@i2">i2</div>
-                        <div class="position" id="p7@i3">i3</div>
-                        <div class="position" id="p7@i4">i4</div>
-                        <div class="position" id="p7@i5">i5</div>
-                        <div class="position" id="p7@i6">i6</div>
-                        <div class="position" id="p7@i7">i7</div>
-                        <div class="position" id="p7@i8">i8</div>
-                        <div class="position" id="p7@i9">i9</div>
-                        <div class="position" id="p7@i0">i0</div>
-                        <div class="position" id="p7@j1">j1</div>
-                        <div class="position" id="p7@j2">j2</div>
-                        <div class="position" id="p7@j3">j3</div>
-                        <div class="position" id="p7@j4">j4</div>
-                        <div class="position" id="p7@j5">j5</div>
-                        <div class="position" id="p7@j6">j6</div>
-                        <div class="position" id="p7@j7">j7</div>
-                        <div class="position" id="p7@j8">j8</div>
-                        <div class="position" id="p7@j9">j9</div>
-                        <div class="position" id="p7@j0">j0</div>
+                    <div class="battleship-board" id="tablero-4-jugadores-2">
+
+                        <div class="position header"></div>
+                        <div class="position header">A</div>
+                        <div class="position header">B</div>
+                        <div class="position header">C</div>
+                        <div class="position header">D</div>
+                        <div class="position header">E</div>
+                        <div class="position header">F</div>
+                        <div class="position header">G</div>
+                        <div class="position header">H</div>
+                        <div class="position header">I</div>
+                        <div class="position header">J</div>
+    
+                        <div class="position header">1</div>
+                        <div class="position" id="p3b1"></div>
+                        <div class="position" id="p3b2"></div>
+                        <div class="position" id="p3b3"></div>
+                        <div class="position" id="p3b4"></div>
+                        <div class="position" id="p3b5"></div>
+                        <div class="position" id="p3b6"></div>
+                        <div class="position" id="p3b7"></div>
+                        <div class="position" id="p3b8"></div>
+                        <div class="position" id="p3b9"></div>
+                        <div class="position" id="p3b0"></div>
+    
+                        <div class="position header">2</div>
+                        <div class="position" id="p3c1"></div>
+                        <div class="position" id="p3c2"></div>
+                        <div class="position" id="p3c3"></div>
+                        <div class="position" id="p3c4"></div>
+                        <div class="position" id="p3c5"></div>
+                        <div class="position" id="p3c6"></div>
+                        <div class="position" id="p3c7"></div>
+                        <div class="position" id="p3c8"></div>
+                        <div class="position" id="p3c9"></div>
+                        <div class="position" id="p3c0"></div>
+            
+                        <div class="position header">3</div>
+                        <div class="position" id="p3d1"></div>
+                        <div class="position" id="p3d2"></div>
+                        <div class="position" id="p3d3"></div>
+                        <div class="position" id="p3d4"></div>
+                        <div class="position" id="p3d5"></div>
+                        <div class="position" id="p3d6"></div>
+                        <div class="position" id="p3d7"></div>
+                        <div class="position" id="p3d8"></div>
+                        <div class="position" id="p3d9"></div>
+                        <div class="position" id="p3d0"></div>
+            
+                        <div class="position header">4</div>
+                        <div class="position" id="p3e1"></div>
+                        <div class="position" id="p3e2"></div>
+                        <div class="position" id="p3e3"></div>
+                        <div class="position" id="p3e4"></div>
+                        <div class="position" id="p3e5"></div>
+                        <div class="position" id="p3e6"></div>
+                        <div class="position" id="p3e7"></div>
+                        <div class="position" id="p3e8"></div>
+                        <div class="position" id="p3e9"></div>
+                        <div class="position" id="p3e0"></div>
+            
+                        <div class="position header">5</div>
+                        <div class="position" id="p3f1"></div>
+                        <div class="position" id="p3f2"></div>
+                        <div class="position" id="p3f3"></div>
+                        <div class="position" id="p3f4"></div>
+                        <div class="position" id="p3f5"></div>
+                        <div class="position" id="p3f6"></div>
+                        <div class="position" id="p3f7"></div>
+                        <div class="position" id="p3f8"></div>
+                        <div class="position" id="p3f9"></div>
+                        <div class="position" id="p3f0"></div>
+            
+                        <div class="position header">6</div>
+                        <div class="position" id="p3g1"></div>
+                        <div class="position" id="p3g2"></div>
+                        <div class="position" id="p3g3"></div>
+                        <div class="position" id="p3g4"></div>
+                        <div class="position" id="p3g5"></div>
+                        <div class="position" id="p3g6"></div>
+                        <div class="position" id="p3g7"></div>
+                        <div class="position" id="p3g8"></div>
+                        <div class="position" id="p3g9"></div>
+                        <div class="position" id="p3g0"></div>
+            
+                        <div class="position header">7</div>
+                        <div class="position" id="p3h1"></div>
+                        <div class="position" id="p3h2"></div>
+                        <div class="position" id="p3h3"></div>
+                        <div class="position" id="p3h4"></div>
+                        <div class="position" id="p3h5"></div>
+                        <div class="position" id="p3h6"></div>
+                        <div class="position" id="p3h7"></div>
+                        <div class="position" id="p3h8"></div>
+                        <div class="position" id="p3h9"></div>
+                        <div class="position" id="p3h0"></div>
+            
+                        <div class="position header">8</div>
+                        <div class="position" id="p3i1"></div>
+                        <div class="position" id="p3i2"></div>
+                        <div class="position" id="p3i3"></div>
+                        <div class="position" id="p3i4"></div>
+                        <div class="position" id="p3i5"></div>
+                        <div class="position" id="p3i6"></div>
+                        <div class="position" id="p3i7"></div>
+                        <div class="position" id="p3i8"></div>
+                        <div class="position" id="p3i9"></div>
+                        <div class="position" id="p3i0"></div>
+            
+                        <div class="position header">9</div>
+                        <div class="position" id="p3j1"></div>
+                        <div class="position" id="p3j2"></div>
+                        <div class="position" id="p3j3"></div>
+                        <div class="position" id="p3j4"></div>
+                        <div class="position" id="p3j5"></div>
+                        <div class="position" id="p3j6"></div>
+                        <div class="position" id="p3j7"></div>
+                        <div class="position" id="p3j8"></div>
+                        <div class="position" id="p3j9"></div>
+                        <div class="position" id="p3j0"></div>
+            
+                        <div class="position header">10</div>
+                        <div class="position" id="p3k1"></div>
+                        <div class="position" id="p3k2"></div>
+                        <div class="position" id="p3k3"></div>
+                        <div class="position" id="p3k4"></div>
+                        <div class="position" id="p3k5"></div>
+                        <div class="position" id="p3k6"></div>
+                        <div class="position" id="p3k7"></div>
+                        <div class="position" id="p3k8"></div>
+                        <div class="position" id="p3k9"></div>
+                        <div class="position" id="p3k0"></div>
+                
                     </div>
                     <div class="table-title">
                         <h3>Tabla Jugador 3.</h3>
                     </div>
-                    <div class="battleship-board">
-                        <div class="position" id="p8@a1">a1</div>
-                        <div class="position" id="p8@a2">a2</div>
-                        <div class="position" id="p8@a3">a3</div>
-                        <div class="position" id="p8@a4">a4</div>
-                        <div class="position" id="p8@a5">a5</div>
-                        <div class="position" id="p8@a6">a6</div>
-                        <div class="position" id="p8@a7">a7</div>
-                        <div class="position" id="p8@a8">a8</div>
-                        <div class="position" id="p8@a9">a9</div>
-                        <div class="position" id="p8@a0">a0</div>
-                        <div class="position" id="p8@b1">b1</div>
-                        <div class="position" id="p8@b2">b2</div>
-                        <div class="position" id="p8@b3">b3</div>
-                        <div class="position" id="p8@b4">b4</div>
-                        <div class="position" id="p8@b5">b5</div>
-                        <div class="position" id="p8@b6">b6</div>
-                        <div class="position" id="p8@b7">b7</div>
-                        <div class="position" id="p8@b8">b8</div>
-                        <div class="position" id="p8@b9">b9</div>
-                        <div class="position" id="p8@b0">b0</div>
-                        <div class="position" id="p8@c1">c1</div>
-                        <div class="position" id="p8@c2">c2</div>
-                        <div class="position" id="p8@c3">c3</div>
-                        <div class="position" id="p8@c4">c4</div>
-                        <div class="position" id="p8@c5">c5</div>
-                        <div class="position" id="p8@c6">c6</div>
-                        <div class="position" id="p8@c7">c7</div>
-                        <div class="position" id="p8@c8">c8</div>
-                        <div class="position" id="p8@c9">c9</div>
-                        <div class="position" id="p8@c0">c0</div>
-                        <div class="position" id="p8@d1">d1</div>
-                        <div class="position" id="p8@d2">d2</div>
-                        <div class="position" id="p8@d3">d3</div>
-                        <div class="position" id="p8@d4">d4</div>
-                        <div class="position" id="p8@d5">d5</div>
-                        <div class="position" id="p8@d6">d6</div>
-                        <div class="position" id="p8@d7">d7</div>
-                        <div class="position" id="p8@d8">d8</div>
-                        <div class="position" id="p8@d9">d9</div>
-                        <div class="position" id="p8@d0">d0</div>
-                        <div class="position" id="p8@e1">e1</div>
-                        <div class="position" id="p8@e2">e2</div>
-                        <div class="position" id="p8@e3">e3</div>
-                        <div class="position" id="p8@e4">e4</div>
-                        <div class="position" id="p8@e5">e5</div>
-                        <div class="position" id="p8@e6">e6</div>
-                        <div class="position" id="p8@e7">e7</div>
-                        <div class="position" id="p8@e8">e8</div>
-                        <div class="position" id="p8@e9">e9</div>
-                        <div class="position" id="p8@e0">e0</div>
-                        <div class="position" id="p8@f1">f1</div>
-                        <div class="position" id="p8@f2">f2</div>
-                        <div class="position" id="p8@f3">f3</div>
-                        <div class="position" id="p8@f4">f4</div>
-                        <div class="position" id="p8@f5">f5</div>
-                        <div class="position" id="p8@f6">f6</div>
-                        <div class="position" id="p8@f7">f7</div>
-                        <div class="position" id="p8@f8">f8</div>
-                        <div class="position" id="p8@f9">f9</div>
-                        <div class="position" id="p8@f0">f0</div>
-                        <div class="position" id="p8@g1">g1</div>
-                        <div class="position" id="p8@g2">g2</div>
-                        <div class="position" id="p8@g3">g3</div>
-                        <div class="position" id="p8@g4">g4</div>
-                        <div class="position" id="p8@g5">g5</div>
-                        <div class="position" id="p8@g6">g6</div>
-                        <div class="position" id="p8@g7">g7</div>
-                        <div class="position" id="p8@g8">g8</div>
-                        <div class="position" id="p8@g9">g9</div>
-                        <div class="position" id="p8@g0">g0</div>
-                        <div class="position" id="p8@h1">h1</div>
-                        <div class="position" id="p8@h2">h2</div>
-                        <div class="position" id="p8@h3">h3</div>
-                        <div class="position" id="p8@h4">h4</div>
-                        <div class="position" id="p8@h5">h5</div>
-                        <div class="position" id="p8@h6">h6</div>
-                        <div class="position" id="p8@h7">h7</div>
-                        <div class="position" id="p8@h8">h8</div>
-                        <div class="position" id="p8@h9">h9</div>
-                        <div class="position" id="p8@h0">h0</div>
-                        <div class="position" id="p8@i1">i1</div>
-                        <div class="position" id="p8@i2">i2</div>
-                        <div class="position" id="p8@i3">i3</div>
-                        <div class="position" id="p8@i4">i4</div>
-                        <div class="position" id="p8@i5">i5</div>
-                        <div class="position" id="p8@i6">i6</div>
-                        <div class="position" id="p8@i7">i7</div>
-                        <div class="position" id="p8@i8">i8</div>
-                        <div class="position" id="p8@i9">i9</div>
-                        <div class="position" id="p8@i0">i0</div>
-                        <div class="position" id="p8@j1">j1</div>
-                        <div class="position" id="p8@j2">j2</div>
-                        <div class="position" id="p8@j3">j3</div>
-                        <div class="position" id="p8@j4">j4</div>
-                        <div class="position" id="p8@j5">j5</div>
-                        <div class="position" id="p8@j6">j6</div>
-                        <div class="position" id="p8@j7">j7</div>
-                        <div class="position" id="p8@j8">j8</div>
-                        <div class="position" id="p8@j9">j9</div>
-                        <div class="position" id="p8@j0">j0</div>
+                    <div class="battleship-board" id="tablero-4-jugadores-3">
+
+                        <div class="position header"></div>
+                        <div class="position header">A</div>
+                        <div class="position header">B</div>
+                        <div class="position header">C</div>
+                        <div class="position header">D</div>
+                        <div class="position header">E</div>
+                        <div class="position header">F</div>
+                        <div class="position header">G</div>
+                        <div class="position header">H</div>
+                        <div class="position header">I</div>
+                        <div class="position header">J</div>
+    
+                        <div class="position header">1</div>
+                        <div class="position" id="p3b1"></div>
+                        <div class="position" id="p3b2"></div>
+                        <div class="position" id="p3b3"></div>
+                        <div class="position" id="p3b4"></div>
+                        <div class="position" id="p3b5"></div>
+                        <div class="position" id="p3b6"></div>
+                        <div class="position" id="p3b7"></div>
+                        <div class="position" id="p3b8"></div>
+                        <div class="position" id="p3b9"></div>
+                        <div class="position" id="p3b0"></div>
+    
+                        <div class="position header">2</div>
+                        <div class="position" id="p3c1"></div>
+                        <div class="position" id="p3c2"></div>
+                        <div class="position" id="p3c3"></div>
+                        <div class="position" id="p3c4"></div>
+                        <div class="position" id="p3c5"></div>
+                        <div class="position" id="p3c6"></div>
+                        <div class="position" id="p3c7"></div>
+                        <div class="position" id="p3c8"></div>
+                        <div class="position" id="p3c9"></div>
+                        <div class="position" id="p3c0"></div>
+            
+                        <div class="position header">3</div>
+                        <div class="position" id="p3d1"></div>
+                        <div class="position" id="p3d2"></div>
+                        <div class="position" id="p3d3"></div>
+                        <div class="position" id="p3d4"></div>
+                        <div class="position" id="p3d5"></div>
+                        <div class="position" id="p3d6"></div>
+                        <div class="position" id="p3d7"></div>
+                        <div class="position" id="p3d8"></div>
+                        <div class="position" id="p3d9"></div>
+                        <div class="position" id="p3d0"></div>
+            
+                        <div class="position header">4</div>
+                        <div class="position" id="p3e1"></div>
+                        <div class="position" id="p3e2"></div>
+                        <div class="position" id="p3e3"></div>
+                        <div class="position" id="p3e4"></div>
+                        <div class="position" id="p3e5"></div>
+                        <div class="position" id="p3e6"></div>
+                        <div class="position" id="p3e7"></div>
+                        <div class="position" id="p3e8"></div>
+                        <div class="position" id="p3e9"></div>
+                        <div class="position" id="p3e0"></div>
+            
+                        <div class="position header">5</div>
+                        <div class="position" id="p3f1"></div>
+                        <div class="position" id="p3f2"></div>
+                        <div class="position" id="p3f3"></div>
+                        <div class="position" id="p3f4"></div>
+                        <div class="position" id="p3f5"></div>
+                        <div class="position" id="p3f6"></div>
+                        <div class="position" id="p3f7"></div>
+                        <div class="position" id="p3f8"></div>
+                        <div class="position" id="p3f9"></div>
+                        <div class="position" id="p3f0"></div>
+            
+                        <div class="position header">6</div>
+                        <div class="position" id="p3g1"></div>
+                        <div class="position" id="p3g2"></div>
+                        <div class="position" id="p3g3"></div>
+                        <div class="position" id="p3g4"></div>
+                        <div class="position" id="p3g5"></div>
+                        <div class="position" id="p3g6"></div>
+                        <div class="position" id="p3g7"></div>
+                        <div class="position" id="p3g8"></div>
+                        <div class="position" id="p3g9"></div>
+                        <div class="position" id="p3g0"></div>
+            
+                        <div class="position header">7</div>
+                        <div class="position" id="p3h1"></div>
+                        <div class="position" id="p3h2"></div>
+                        <div class="position" id="p3h3"></div>
+                        <div class="position" id="p3h4"></div>
+                        <div class="position" id="p3h5"></div>
+                        <div class="position" id="p3h6"></div>
+                        <div class="position" id="p3h7"></div>
+                        <div class="position" id="p3h8"></div>
+                        <div class="position" id="p3h9"></div>
+                        <div class="position" id="p3h0"></div>
+            
+                        <div class="position header">8</div>
+                        <div class="position" id="p3i1"></div>
+                        <div class="position" id="p3i2"></div>
+                        <div class="position" id="p3i3"></div>
+                        <div class="position" id="p3i4"></div>
+                        <div class="position" id="p3i5"></div>
+                        <div class="position" id="p3i6"></div>
+                        <div class="position" id="p3i7"></div>
+                        <div class="position" id="p3i8"></div>
+                        <div class="position" id="p3i9"></div>
+                        <div class="position" id="p3i0"></div>
+            
+                        <div class="position header">9</div>
+                        <div class="position" id="p3j1"></div>
+                        <div class="position" id="p3j2"></div>
+                        <div class="position" id="p3j3"></div>
+                        <div class="position" id="p3j4"></div>
+                        <div class="position" id="p3j5"></div>
+                        <div class="position" id="p3j6"></div>
+                        <div class="position" id="p3j7"></div>
+                        <div class="position" id="p3j8"></div>
+                        <div class="position" id="p3j9"></div>
+                        <div class="position" id="p3j0"></div>
+            
+                        <div class="position header">10</div>
+                        <div class="position" id="p3k1"></div>
+                        <div class="position" id="p3k2"></div>
+                        <div class="position" id="p3k3"></div>
+                        <div class="position" id="p3k4"></div>
+                        <div class="position" id="p3k5"></div>
+                        <div class="position" id="p3k6"></div>
+                        <div class="position" id="p3k7"></div>
+                        <div class="position" id="p3k8"></div>
+                        <div class="position" id="p3k9"></div>
+                        <div class="position" id="p3k0"></div>
+                
                     </div>
                     <div class="table-title">
                         <h3>Tabla Jugador 4.</h3>
                     </div>
-                    <div class="battleship-board">
-                        <div class="position" id="p9@a1">a1</div>
-                        <div class="position" id="p9@a2">a2</div>
-                        <div class="position" id="p9@a3">a3</div>
-                        <div class="position" id="p9@a4">a4</div>
-                        <div class="position" id="p9@a5">a5</div>
-                        <div class="position" id="p9@a6">a6</div>
-                        <div class="position" id="p9@a7">a7</div>
-                        <div class="position" id="p9@a8">a8</div>
-                        <div class="position" id="p9@a9">a9</div>
-                        <div class="position" id="p9@a0">a0</div>
-                        <div class="position" id="p9@b1">b1</div>
-                        <div class="position" id="p9@b2">b2</div>
-                        <div class="position" id="p9@b3">b3</div>
-                        <div class="position" id="p9@b4">b4</div>
-                        <div class="position" id="p9@b5">b5</div>
-                        <div class="position" id="p9@b6">b6</div>
-                        <div class="position" id="p9@b7">b7</div>
-                        <div class="position" id="p9@b8">b8</div>
-                        <div class="position" id="p9@b9">b9</div>
-                        <div class="position" id="p9@b0">b0</div>
-                        <div class="position" id="p9@c1">c1</div>
-                        <div class="position" id="p9@c2">c2</div>
-                        <div class="position" id="p9@c3">c3</div>
-                        <div class="position" id="p9@c4">c4</div>
-                        <div class="position" id="p9@c5">c5</div>
-                        <div class="position" id="p9@c6">c6</div>
-                        <div class="position" id="p9@c7">c7</div>
-                        <div class="position" id="p9@c8">c8</div>
-                        <div class="position" id="p9@c9">c9</div>
-                        <div class="position" id="p9@c0">c0</div>
-                        <div class="position" id="p9@d1">d1</div>
-                        <div class="position" id="p9@d2">d2</div>
-                        <div class="position" id="p9@d3">d3</div>
-                        <div class="position" id="p9@d4">d4</div>
-                        <div class="position" id="p9@d5">d5</div>
-                        <div class="position" id="p9@d6">d6</div>
-                        <div class="position" id="p9@d7">d7</div>
-                        <div class="position" id="p9@d8">d8</div>
-                        <div class="position" id="p9@d9">d9</div>
-                        <div class="position" id="p9@d0">d0</div>
-                        <div class="position" id="p9@e1">e1</div>
-                        <div class="position" id="p9@e2">e2</div>
-                        <div class="position" id="p9@e3">e3</div>
-                        <div class="position" id="p9@e4">e4</div>
-                        <div class="position" id="p9@e5">e5</div>
-                        <div class="position" id="p9@e6">e6</div>
-                        <div class="position" id="p9@e7">e7</div>
-                        <div class="position" id="p9@e8">e8</div>
-                        <div class="position" id="p9@e9">e9</div>
-                        <div class="position" id="p9@e0">e0</div>
-                        <div class="position" id="p9@f1">f1</div>
-                        <div class="position" id="p9@f2">f2</div>
-                        <div class="position" id="p9@f3">f3</div>
-                        <div class="position" id="p9@f4">f4</div>
-                        <div class="position" id="p9@f5">f5</div>
-                        <div class="position" id="p9@f6">f6</div>
-                        <div class="position" id="p9@f7">f7</div>
-                        <div class="position" id="p9@f8">f8</div>
-                        <div class="position" id="p9@f9">f9</div>
-                        <div class="position" id="p9@f0">f0</div>
-                        <div class="position" id="p9@g1">g1</div>
-                        <div class="position" id="p9@g2">g2</div>
-                        <div class="position" id="p9@g3">g3</div>
-                        <div class="position" id="p9@g4">g4</div>
-                        <div class="position" id="p9@g5">g5</div>
-                        <div class="position" id="p9@g6">g6</div>
-                        <div class="position" id="p9@g7">g7</div>
-                        <div class="position" id="p9@g8">g8</div>
-                        <div class="position" id="p9@g9">g9</div>
-                        <div class="position" id="p9@g0">g0</div>
-                        <div class="position" id="p9@h1">h1</div>
-                        <div class="position" id="p9@h2">h2</div>
-                        <div class="position" id="p9@h3">h3</div>
-                        <div class="position" id="p9@h4">h4</div>
-                        <div class="position" id="p9@h5">h5</div>
-                        <div class="position" id="p9@h6">h6</div>
-                        <div class="position" id="p9@h7">h7</div>
-                        <div class="position" id="p9@h8">h8</div>
-                        <div class="position" id="p9@h9">h9</div>
-                        <div class="position" id="p9@h0">h0</div>
-                        <div class="position" id="p9@i1">i1</div>
-                        <div class="position" id="p9@i2">i2</div>
-                        <div class="position" id="p9@i3">i3</div>
-                        <div class="position" id="p9@i4">i4</div>
-                        <div class="position" id="p9@i5">i5</div>
-                        <div class="position" id="p9@i6">i6</div>
-                        <div class="position" id="p9@i7">i7</div>
-                        <div class="position" id="p9@i8">i8</div>
-                        <div class="position" id="p9@i9">i9</div>
-                        <div class="position" id="p9@i0">i0</div>
-                        <div class="position" id="p9@j1">j1</div>
-                        <div class="position" id="p9@j2">j2</div>
-                        <div class="position" id="p9@j3">j3</div>
-                        <div class="position" id="p9@j4">j4</div>
-                        <div class="position" id="p9@j5">j5</div>
-                        <div class="position" id="p9@j6">j6</div>
-                        <div class="position" id="p9@j7">j7</div>
-                        <div class="position" id="p9@j8">j8</div>
-                        <div class="position" id="p9@j9">j9</div>
-                        <div class="position" id="p9@j0">j0</div>
+                    <div class="battleship-board" id="tablero-4-jugadores-4">
+
+                        <div class="position header"></div>
+                        <div class="position header">A</div>
+                        <div class="position header">B</div>
+                        <div class="position header">C</div>
+                        <div class="position header">D</div>
+                        <div class="position header">E</div>
+                        <div class="position header">F</div>
+                        <div class="position header">G</div>
+                        <div class="position header">H</div>
+                        <div class="position header">I</div>
+                        <div class="position header">J</div>
+    
+                        <div class="position header">1</div>
+                        <div class="position" id="p3b1"></div>
+                        <div class="position" id="p3b2"></div>
+                        <div class="position" id="p3b3"></div>
+                        <div class="position" id="p3b4"></div>
+                        <div class="position" id="p3b5"></div>
+                        <div class="position" id="p3b6"></div>
+                        <div class="position" id="p3b7"></div>
+                        <div class="position" id="p3b8"></div>
+                        <div class="position" id="p3b9"></div>
+                        <div class="position" id="p3b0"></div>
+    
+                        <div class="position header">2</div>
+                        <div class="position" id="p3c1"></div>
+                        <div class="position" id="p3c2"></div>
+                        <div class="position" id="p3c3"></div>
+                        <div class="position" id="p3c4"></div>
+                        <div class="position" id="p3c5"></div>
+                        <div class="position" id="p3c6"></div>
+                        <div class="position" id="p3c7"></div>
+                        <div class="position" id="p3c8"></div>
+                        <div class="position" id="p3c9"></div>
+                        <div class="position" id="p3c0"></div>
+            
+                        <div class="position header">3</div>
+                        <div class="position" id="p3d1"></div>
+                        <div class="position" id="p3d2"></div>
+                        <div class="position" id="p3d3"></div>
+                        <div class="position" id="p3d4"></div>
+                        <div class="position" id="p3d5"></div>
+                        <div class="position" id="p3d6"></div>
+                        <div class="position" id="p3d7"></div>
+                        <div class="position" id="p3d8"></div>
+                        <div class="position" id="p3d9"></div>
+                        <div class="position" id="p3d0"></div>
+            
+                        <div class="position header">4</div>
+                        <div class="position" id="p3e1"></div>
+                        <div class="position" id="p3e2"></div>
+                        <div class="position" id="p3e3"></div>
+                        <div class="position" id="p3e4"></div>
+                        <div class="position" id="p3e5"></div>
+                        <div class="position" id="p3e6"></div>
+                        <div class="position" id="p3e7"></div>
+                        <div class="position" id="p3e8"></div>
+                        <div class="position" id="p3e9"></div>
+                        <div class="position" id="p3e0"></div>
+            
+                        <div class="position header">5</div>
+                        <div class="position" id="p3f1"></div>
+                        <div class="position" id="p3f2"></div>
+                        <div class="position" id="p3f3"></div>
+                        <div class="position" id="p3f4"></div>
+                        <div class="position" id="p3f5"></div>
+                        <div class="position" id="p3f6"></div>
+                        <div class="position" id="p3f7"></div>
+                        <div class="position" id="p3f8"></div>
+                        <div class="position" id="p3f9"></div>
+                        <div class="position" id="p3f0"></div>
+            
+                        <div class="position header">6</div>
+                        <div class="position" id="p3g1"></div>
+                        <div class="position" id="p3g2"></div>
+                        <div class="position" id="p3g3"></div>
+                        <div class="position" id="p3g4"></div>
+                        <div class="position" id="p3g5"></div>
+                        <div class="position" id="p3g6"></div>
+                        <div class="position" id="p3g7"></div>
+                        <div class="position" id="p3g8"></div>
+                        <div class="position" id="p3g9"></div>
+                        <div class="position" id="p3g0"></div>
+            
+                        <div class="position header">7</div>
+                        <div class="position" id="p3h1"></div>
+                        <div class="position" id="p3h2"></div>
+                        <div class="position" id="p3h3"></div>
+                        <div class="position" id="p3h4"></div>
+                        <div class="position" id="p3h5"></div>
+                        <div class="position" id="p3h6"></div>
+                        <div class="position" id="p3h7"></div>
+                        <div class="position" id="p3h8"></div>
+                        <div class="position" id="p3h9"></div>
+                        <div class="position" id="p3h0"></div>
+            
+                        <div class="position header">8</div>
+                        <div class="position" id="p3i1"></div>
+                        <div class="position" id="p3i2"></div>
+                        <div class="position" id="p3i3"></div>
+                        <div class="position" id="p3i4"></div>
+                        <div class="position" id="p3i5"></div>
+                        <div class="position" id="p3i6"></div>
+                        <div class="position" id="p3i7"></div>
+                        <div class="position" id="p3i8"></div>
+                        <div class="position" id="p3i9"></div>
+                        <div class="position" id="p3i0"></div>
+            
+                        <div class="position header">9</div>
+                        <div class="position" id="p3j1"></div>
+                        <div class="position" id="p3j2"></div>
+                        <div class="position" id="p3j3"></div>
+                        <div class="position" id="p3j4"></div>
+                        <div class="position" id="p3j5"></div>
+                        <div class="position" id="p3j6"></div>
+                        <div class="position" id="p3j7"></div>
+                        <div class="position" id="p3j8"></div>
+                        <div class="position" id="p3j9"></div>
+                        <div class="position" id="p3j0"></div>
+            
+                        <div class="position header">10</div>
+                        <div class="position" id="p3k1"></div>
+                        <div class="position" id="p3k2"></div>
+                        <div class="position" id="p3k3"></div>
+                        <div class="position" id="p3k4"></div>
+                        <div class="position" id="p3k5"></div>
+                        <div class="position" id="p3k6"></div>
+                        <div class="position" id="p3k7"></div>
+                        <div class="position" id="p3k8"></div>
+                        <div class="position" id="p3k9"></div>
+                        <div class="position" id="p3k0"></div>
+                
                     </div>
                     <div class="back-to-top">
                         <p><a href="#title">Back to Top</a></p>
                     </div>
                 </section>
             </section>
+
         </main>
         <footer>
             <div id="footer">

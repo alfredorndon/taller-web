@@ -28,8 +28,8 @@ body {
 
 section {
     padding: 30px;
-    border: 1px solid #000000;
     margin: 20px;
+    border: 1px solid #000;
     margin-left: 100px;
     margin-right: 100px;
 }
@@ -181,23 +181,51 @@ h3 {
     font-weight: normal;
 }
 
-button {
-    background-color: #9f9fed;
-    border: 0;
-    color: #FEF9FF; 
-    height: 50px;
-    width: 200px;
-    text-align: center;
-    transition: background-color 0.5s ease;
-    text-decoration: none;
-    font-family: 'Roboto', sans-serif;
-    font-size: 18px;
-    font-weight: normal;
+.player-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; /* Ajusta según necesites */
 }
 
-button:hover,
-button:active {
-    background-color: #d4c1ec;
+label {
+    display: block;
+    width: 250px;
+    text-align: center; /* Centra el texto del label */
+    margin-bottom: 10px;
+}
+
+input {
+    width: 250px;
+    height: 30px; /* Ajusta la altura según necesites */
+    font-size: 16px; /* Tamaño de letra */
+    border: none; /* Sin bordes */
+    background-color: white; /* Fondo blanco */
+    text-align: left; /* Centra el texto dentro del input */
+    margin-bottom: 10px;
+}
+
+.submit-button {
+    display: inline-block; /* Permite aplicar padding y dimensiones como un botón */
+    border: 1px solid #003f5c; /* Borde del botón */
+    color: #003f5c; /* Color del texto */
+    height: 40px; /* Altura del botón */
+    width: 150px; /* Ancho del botón */
+    text-align: center; /* Centra el texto */
+    background-color: transparent; /* Fondo transparente */
+    transition: background-color 0.5s ease, color 0.5s ease; /* Transición suave para el hover */
+    text-decoration: none; /* Sin subrayado */
+    font-family: 'Roboto', sans-serif; /* Fuente */
+    font-size: 16px; /* Tamaño de letra */
+    font-weight: normal; /* Peso de la fuente */
+    line-height: 40px; /* Centra el texto verticalmente */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    margin-top: 10px; /* Centra el botón horizontalmente */
+}
+
+.submit-button:hover {
+    background-color: #00b4d8; /* Color de fondo al pasar el mouse */
 }
 
 .confirmar {

@@ -16,12 +16,6 @@
             href="styles/styles.css" 
             type="text/css" 
         />
-        <link
-            rel="stylesheet"
-            href="styles/print-style.css"
-            media="print"
-            type="text/css"
-        />
         <script 
             src="scripts/script.js" 
             type="text/javascript"> 
@@ -40,7 +34,7 @@
                     <ul>
                         <li><a href="#instrucciones">Instrucciones</a></li>
                         <li><a href="#power-ups">Power-Ups</a></li>
-                        <li><a href="#x-jugadores">Jugar</a></li>
+                        <li><a href="#jugar">Jugar</a></li>
                     </ul>
                 </nav>
             </div>
@@ -88,7 +82,7 @@
                 <h3 id="duration">Duración del Turno.</h3>
                 <p>Se debe establecer un límite de tiempo para cada turno de 60 segundos (1 minuto) para mantener el ritmo del juego. Si un jugador no realiza su movimiento dentro del límite de tiempo, se considera un turno perdido.</p>
                 <div class="back-to-top">
-                    <p><a href="#title">Back to Top</a></p>
+                    <p><a href="#title">Página Principal</a></p>
                 </div>
             </section>
 
@@ -154,19 +148,32 @@
                     <li>Cada jugador podrá utilizar sus “power-ups” independientemente, sin compartir información con otros jugadores.</li>
                 </ul>
                 <div class="back-to-top">
-                    <p><a href="#title">Back to Top</a></p>
+                    <p><a href="#title">Página Principal</a></p>
                 </div>
             </section>
 
-            <section id="x-jugadores">
+            <section id="jugar">
                 <div class="subtitle">
                     <h2>Jugar</h2>
                 </div>
-                <nav class="jugadores">
+                <section class="player-form" id="player-form-name">
+                    <div class="subtitle-form">
+                        <h3>Datos del Jugador</h3>
+                    </div>
+                    <form action="#" method="post">
+                        <label for="nombre">Nombre del Jugador</label>
+                        <input id="datos-jugador-frm-nombre-1" name="nombre" placeholder=""/>
+                        <br>
+                        <div class="confirmar">
+                            <button type="submit">Confirmar</button>
+                        </div>
+                    </form>
+                </section>
+                <nav id="seleccion-jugadores">
                     <ul>
-                        <li><a href="#dos-jugadores">2 Jugadores.</a></li>
-                        <li><a href="#tres-jugadores">3 Jugadores.</a></li>
-                        <li><a href="#cuatro-jugadores">4 Jugadores.</a></li>
+                        <li><a href="#dos-jugadores">2 Jugadores</a></li>
+                        <li><a href="#tres-jugadores">3 Jugadores</a></li>
+                        <li><a href="#cuatro-jugadores">4 Jugadores</a></li>
                     </ul>
                 </nav>
                 <section class="legend" id="ships-legend">
@@ -181,7 +188,6 @@
                         <li>1 Destructor (2 casillas, ya sea en sentido horizontal o vertical).</li>
                     </ul>
                 </section>
-
                 <section class="legend" id="instrucciones-multijugador">
                     <div class="subtitle-form">
                         <h3>Instrucciones Multijigador</h3>
@@ -208,335 +214,14 @@
                         <li>El último jugador en tener barcos en su tablero es el ganador.</li>
                     </ul>
                 </section>
-
-                <section id="dos-jugadores">
+                <section id="tableros-jugadores">
                     <div class="subtitle">
-                        <h2>Jugar entre 2 Jugadores.</h2>
+                        <h2>¡Prepárate para Jugar!</h2>
                     </div>
-                    <section class="player-form" id="form-2-jugadores">
-                        <div class="subtitle-form">
-                            <h3>Datos para Dos Jugadores</h3>
-                        </div>
-                        <form action="#" method="post">
-                            <label for="nombre">Nombre del Jugador 1</label>
-                            <input id="datos-jugador-frm-nombre-1" name="nombre" placeholder=""/>
-                            <br>
-                            <label for="nombre">Nombre del Jugador 2</label>
-                            <input id="datos-jugador-frm-nombre-2" name="nombre" placeholder=""/>
-                            <br>
-                            <div class="confirmar">
-                                <button type="submit">Confirmar</button>
-                            </div>
-                        </form>
-                    </section>
                     <div class="table-title">
                         <h3>Tabla Jugador 1.</h3>
                     </div>
-                    <div class="battleship-board" id="tablero-2-jugadores-1">
-    
-                        <div class="position header"></div>
-                        <div class="position header">A</div>
-                        <div class="position header">B</div>
-                        <div class="position header">C</div>
-                        <div class="position header">D</div>
-                        <div class="position header">E</div>
-                        <div class="position header">F</div>
-                        <div class="position header">G</div>
-                        <div class="position header">H</div>
-                        <div class="position header">I</div>
-                        <div class="position header">J</div>
-    
-                        <div class="position header">1</div>
-                        <div class="position" id="p3b1"></div>
-                        <div class="position" id="p3b2"></div>
-                        <div class="position" id="p3b3"></div>
-                        <div class="position" id="p3b4"></div>
-                        <div class="position" id="p3b5"></div>
-                        <div class="position" id="p3b6"></div>
-                        <div class="position" id="p3b7"></div>
-                        <div class="position" id="p3b8"></div>
-                        <div class="position" id="p3b9"></div>
-                        <div class="position" id="p3b0"></div>
-    
-                        <div class="position header">2</div>
-                        <div class="position" id="p3c1"></div>
-                        <div class="position" id="p3c2"></div>
-                        <div class="position" id="p3c3"></div>
-                        <div class="position" id="p3c4"></div>
-                        <div class="position" id="p3c5"></div>
-                        <div class="position" id="p3c6"></div>
-                        <div class="position" id="p3c7"></div>
-                        <div class="position" id="p3c8"></div>
-                        <div class="position" id="p3c9"></div>
-                        <div class="position" id="p3c0"></div>
-            
-                        <div class="position header">3</div>
-                        <div class="position" id="p3d1"></div>
-                        <div class="position" id="p3d2"></div>
-                        <div class="position" id="p3d3"></div>
-                        <div class="position" id="p3d4"></div>
-                        <div class="position" id="p3d5"></div>
-                        <div class="position" id="p3d6"></div>
-                        <div class="position" id="p3d7"></div>
-                        <div class="position" id="p3d8"></div>
-                        <div class="position" id="p3d9"></div>
-                        <div class="position" id="p3d0"></div>
-            
-                        <div class="position header">4</div>
-                        <div class="position" id="p3e1"></div>
-                        <div class="position" id="p3e2"></div>
-                        <div class="position" id="p3e3"></div>
-                        <div class="position" id="p3e4"></div>
-                        <div class="position" id="p3e5"></div>
-                        <div class="position" id="p3e6"></div>
-                        <div class="position" id="p3e7"></div>
-                        <div class="position" id="p3e8"></div>
-                        <div class="position" id="p3e9"></div>
-                        <div class="position" id="p3e0"></div>
-            
-                        <div class="position header">5</div>
-                        <div class="position" id="p3f1"></div>
-                        <div class="position" id="p3f2"></div>
-                        <div class="position" id="p3f3"></div>
-                        <div class="position" id="p3f4"></div>
-                        <div class="position" id="p3f5"></div>
-                        <div class="position" id="p3f6"></div>
-                        <div class="position" id="p3f7"></div>
-                        <div class="position" id="p3f8"></div>
-                        <div class="position" id="p3f9"></div>
-                        <div class="position" id="p3f0"></div>
-            
-                        <div class="position header">6</div>
-                        <div class="position" id="p3g1"></div>
-                        <div class="position" id="p3g2"></div>
-                        <div class="position" id="p3g3"></div>
-                        <div class="position" id="p3g4"></div>
-                        <div class="position" id="p3g5"></div>
-                        <div class="position" id="p3g6"></div>
-                        <div class="position" id="p3g7"></div>
-                        <div class="position" id="p3g8"></div>
-                        <div class="position" id="p3g9"></div>
-                        <div class="position" id="p3g0"></div>
-            
-                        <div class="position header">7</div>
-                        <div class="position" id="p3h1"></div>
-                        <div class="position" id="p3h2"></div>
-                        <div class="position" id="p3h3"></div>
-                        <div class="position" id="p3h4"></div>
-                        <div class="position" id="p3h5"></div>
-                        <div class="position" id="p3h6"></div>
-                        <div class="position" id="p3h7"></div>
-                        <div class="position" id="p3h8"></div>
-                        <div class="position" id="p3h9"></div>
-                        <div class="position" id="p3h0"></div>
-            
-                        <div class="position header">8</div>
-                        <div class="position" id="p3i1"></div>
-                        <div class="position" id="p3i2"></div>
-                        <div class="position" id="p3i3"></div>
-                        <div class="position" id="p3i4"></div>
-                        <div class="position" id="p3i5"></div>
-                        <div class="position" id="p3i6"></div>
-                        <div class="position" id="p3i7"></div>
-                        <div class="position" id="p3i8"></div>
-                        <div class="position" id="p3i9"></div>
-                        <div class="position" id="p3i0"></div>
-            
-                        <div class="position header">9</div>
-                        <div class="position" id="p3j1"></div>
-                        <div class="position" id="p3j2"></div>
-                        <div class="position" id="p3j3"></div>
-                        <div class="position" id="p3j4"></div>
-                        <div class="position" id="p3j5"></div>
-                        <div class="position" id="p3j6"></div>
-                        <div class="position" id="p3j7"></div>
-                        <div class="position" id="p3j8"></div>
-                        <div class="position" id="p3j9"></div>
-                        <div class="position" id="p3j0"></div>
-            
-                        <div class="position header">10</div>
-                        <div class="position" id="p3k1"></div>
-                        <div class="position" id="p3k2"></div>
-                        <div class="position" id="p3k3"></div>
-                        <div class="position" id="p3k4"></div>
-                        <div class="position" id="p3k5"></div>
-                        <div class="position" id="p3k6"></div>
-                        <div class="position" id="p3k7"></div>
-                        <div class="position" id="p3k8"></div>
-                        <div class="position" id="p3k9"></div>
-                        <div class="position" id="p3k0"></div>
-                
-                    </div>
-                    <div class="table-title">
-                        <h3>Tabla Jugador 2.</h3>
-                    </div>
-                    <div class="battleship-board" id="tablero-2-jugadores-2">
-    
-                        <div class="position header"></div>
-                        <div class="position header">A</div>
-                        <div class="position header">B</div>
-                        <div class="position header">C</div>
-                        <div class="position header">D</div>
-                        <div class="position header">E</div>
-                        <div class="position header">F</div>
-                        <div class="position header">G</div>
-                        <div class="position header">H</div>
-                        <div class="position header">I</div>
-                        <div class="position header">J</div>
-    
-                        <div class="position header">1</div>
-                        <div class="position" id="p3b1"></div>
-                        <div class="position" id="p3b2"></div>
-                        <div class="position" id="p3b3"></div>
-                        <div class="position" id="p3b4"></div>
-                        <div class="position" id="p3b5"></div>
-                        <div class="position" id="p3b6"></div>
-                        <div class="position" id="p3b7"></div>
-                        <div class="position" id="p3b8"></div>
-                        <div class="position" id="p3b9"></div>
-                        <div class="position" id="p3b0"></div>
-    
-                        <div class="position header">2</div>
-                        <div class="position" id="p3c1"></div>
-                        <div class="position" id="p3c2"></div>
-                        <div class="position" id="p3c3"></div>
-                        <div class="position" id="p3c4"></div>
-                        <div class="position" id="p3c5"></div>
-                        <div class="position" id="p3c6"></div>
-                        <div class="position" id="p3c7"></div>
-                        <div class="position" id="p3c8"></div>
-                        <div class="position" id="p3c9"></div>
-                        <div class="position" id="p3c0"></div>
-            
-                        <div class="position header">3</div>
-                        <div class="position" id="p3d1"></div>
-                        <div class="position" id="p3d2"></div>
-                        <div class="position" id="p3d3"></div>
-                        <div class="position" id="p3d4"></div>
-                        <div class="position" id="p3d5"></div>
-                        <div class="position" id="p3d6"></div>
-                        <div class="position" id="p3d7"></div>
-                        <div class="position" id="p3d8"></div>
-                        <div class="position" id="p3d9"></div>
-                        <div class="position" id="p3d0"></div>
-            
-                        <div class="position header">4</div>
-                        <div class="position" id="p3e1"></div>
-                        <div class="position" id="p3e2"></div>
-                        <div class="position" id="p3e3"></div>
-                        <div class="position" id="p3e4"></div>
-                        <div class="position" id="p3e5"></div>
-                        <div class="position" id="p3e6"></div>
-                        <div class="position" id="p3e7"></div>
-                        <div class="position" id="p3e8"></div>
-                        <div class="position" id="p3e9"></div>
-                        <div class="position" id="p3e0"></div>
-            
-                        <div class="position header">5</div>
-                        <div class="position" id="p3f1"></div>
-                        <div class="position" id="p3f2"></div>
-                        <div class="position" id="p3f3"></div>
-                        <div class="position" id="p3f4"></div>
-                        <div class="position" id="p3f5"></div>
-                        <div class="position" id="p3f6"></div>
-                        <div class="position" id="p3f7"></div>
-                        <div class="position" id="p3f8"></div>
-                        <div class="position" id="p3f9"></div>
-                        <div class="position" id="p3f0"></div>
-            
-                        <div class="position header">6</div>
-                        <div class="position" id="p3g1"></div>
-                        <div class="position" id="p3g2"></div>
-                        <div class="position" id="p3g3"></div>
-                        <div class="position" id="p3g4"></div>
-                        <div class="position" id="p3g5"></div>
-                        <div class="position" id="p3g6"></div>
-                        <div class="position" id="p3g7"></div>
-                        <div class="position" id="p3g8"></div>
-                        <div class="position" id="p3g9"></div>
-                        <div class="position" id="p3g0"></div>
-            
-                        <div class="position header">7</div>
-                        <div class="position" id="p3h1"></div>
-                        <div class="position" id="p3h2"></div>
-                        <div class="position" id="p3h3"></div>
-                        <div class="position" id="p3h4"></div>
-                        <div class="position" id="p3h5"></div>
-                        <div class="position" id="p3h6"></div>
-                        <div class="position" id="p3h7"></div>
-                        <div class="position" id="p3h8"></div>
-                        <div class="position" id="p3h9"></div>
-                        <div class="position" id="p3h0"></div>
-            
-                        <div class="position header">8</div>
-                        <div class="position" id="p3i1"></div>
-                        <div class="position" id="p3i2"></div>
-                        <div class="position" id="p3i3"></div>
-                        <div class="position" id="p3i4"></div>
-                        <div class="position" id="p3i5"></div>
-                        <div class="position" id="p3i6"></div>
-                        <div class="position" id="p3i7"></div>
-                        <div class="position" id="p3i8"></div>
-                        <div class="position" id="p3i9"></div>
-                        <div class="position" id="p3i0"></div>
-            
-                        <div class="position header">9</div>
-                        <div class="position" id="p3j1"></div>
-                        <div class="position" id="p3j2"></div>
-                        <div class="position" id="p3j3"></div>
-                        <div class="position" id="p3j4"></div>
-                        <div class="position" id="p3j5"></div>
-                        <div class="position" id="p3j6"></div>
-                        <div class="position" id="p3j7"></div>
-                        <div class="position" id="p3j8"></div>
-                        <div class="position" id="p3j9"></div>
-                        <div class="position" id="p3j0"></div>
-            
-                        <div class="position header">10</div>
-                        <div class="position" id="p3k1"></div>
-                        <div class="position" id="p3k2"></div>
-                        <div class="position" id="p3k3"></div>
-                        <div class="position" id="p3k4"></div>
-                        <div class="position" id="p3k5"></div>
-                        <div class="position" id="p3k6"></div>
-                        <div class="position" id="p3k7"></div>
-                        <div class="position" id="p3k8"></div>
-                        <div class="position" id="p3k9"></div>
-                        <div class="position" id="p3k0"></div>
-                
-                    </div>
-                    <div class="back-to-top">
-                        <p><a href="#title">Back to Top</a></p>
-                    </div>
-                </section>
-
-                <section id="tres-jugadores">
-                    <div class="subtitle">
-                        <h2>Jugar entre 3 Jugadores.</h2>
-                    </div>
-                    <section class="player-form" id="form-3-jugadores">
-                        <div class="subtitle-form">
-                            <h3>Datos para Tres Jugadores</h3>
-                        </div>
-                        <form action="#" method="post">
-                            <label for="nombre">Nombre del Jugador 1</label>
-                            <input id="datos-jugador-frm-nombre-1" name="nombre" placeholder=""/>
-                            <br>
-                            <label for="nombre">Nombre del Jugador 2</label>
-                            <input id="datos-jugador-frm-nombre-2" name="nombre" placeholder=""/>
-                            <br>
-                            <label for="nombre">Nombre del Jugador 3</label>
-                            <input id="datos-jugador-frm-nombre-3" name="nombre" placeholder=""/>
-                            <br>
-                            <div class="confirmar">
-                                <button type="submit">Confirmar</button>
-                            </div>
-                        </form>
-                    </section>
-                    <div class="table-title">
-                        <h3>Tabla Jugador 1.</h3>
-                    </div>
-                    <div class="battleship-board" id="tablero-3-jugadores-1">
+                    <div class="battleship-board" id="tablero-jugador">
 
                         <div class="position header"></div>
                         <div class="position header">A</div>
@@ -674,7 +359,7 @@
                     <div class="table-title">
                         <h3>Tabla Jugador 2.</h3>
                     </div>
-                    <div class="battleship-board" id="tablero-3-jugadores-2">
+                    <div class="battleship-board" id="tablero-oponente-1">
 
                         <div class="position header"></div>
                         <div class="position header">A</div>
@@ -812,452 +497,7 @@
                     <div class="table-title">
                         <h3>Tabla Jugador 3.</h3>
                     </div>
-                    <div class="battleship-board" id="tablero-3-jugadores-3">
-
-                        <div class="position header"></div>
-                        <div class="position header">A</div>
-                        <div class="position header">B</div>
-                        <div class="position header">C</div>
-                        <div class="position header">D</div>
-                        <div class="position header">E</div>
-                        <div class="position header">F</div>
-                        <div class="position header">G</div>
-                        <div class="position header">H</div>
-                        <div class="position header">I</div>
-                        <div class="position header">J</div>
-    
-                        <div class="position header">1</div>
-                        <div class="position" id="p3b1"></div>
-                        <div class="position" id="p3b2"></div>
-                        <div class="position" id="p3b3"></div>
-                        <div class="position" id="p3b4"></div>
-                        <div class="position" id="p3b5"></div>
-                        <div class="position" id="p3b6"></div>
-                        <div class="position" id="p3b7"></div>
-                        <div class="position" id="p3b8"></div>
-                        <div class="position" id="p3b9"></div>
-                        <div class="position" id="p3b0"></div>
-    
-                        <div class="position header">2</div>
-                        <div class="position" id="p3c1"></div>
-                        <div class="position" id="p3c2"></div>
-                        <div class="position" id="p3c3"></div>
-                        <div class="position" id="p3c4"></div>
-                        <div class="position" id="p3c5"></div>
-                        <div class="position" id="p3c6"></div>
-                        <div class="position" id="p3c7"></div>
-                        <div class="position" id="p3c8"></div>
-                        <div class="position" id="p3c9"></div>
-                        <div class="position" id="p3c0"></div>
-            
-                        <div class="position header">3</div>
-                        <div class="position" id="p3d1"></div>
-                        <div class="position" id="p3d2"></div>
-                        <div class="position" id="p3d3"></div>
-                        <div class="position" id="p3d4"></div>
-                        <div class="position" id="p3d5"></div>
-                        <div class="position" id="p3d6"></div>
-                        <div class="position" id="p3d7"></div>
-                        <div class="position" id="p3d8"></div>
-                        <div class="position" id="p3d9"></div>
-                        <div class="position" id="p3d0"></div>
-            
-                        <div class="position header">4</div>
-                        <div class="position" id="p3e1"></div>
-                        <div class="position" id="p3e2"></div>
-                        <div class="position" id="p3e3"></div>
-                        <div class="position" id="p3e4"></div>
-                        <div class="position" id="p3e5"></div>
-                        <div class="position" id="p3e6"></div>
-                        <div class="position" id="p3e7"></div>
-                        <div class="position" id="p3e8"></div>
-                        <div class="position" id="p3e9"></div>
-                        <div class="position" id="p3e0"></div>
-            
-                        <div class="position header">5</div>
-                        <div class="position" id="p3f1"></div>
-                        <div class="position" id="p3f2"></div>
-                        <div class="position" id="p3f3"></div>
-                        <div class="position" id="p3f4"></div>
-                        <div class="position" id="p3f5"></div>
-                        <div class="position" id="p3f6"></div>
-                        <div class="position" id="p3f7"></div>
-                        <div class="position" id="p3f8"></div>
-                        <div class="position" id="p3f9"></div>
-                        <div class="position" id="p3f0"></div>
-            
-                        <div class="position header">6</div>
-                        <div class="position" id="p3g1"></div>
-                        <div class="position" id="p3g2"></div>
-                        <div class="position" id="p3g3"></div>
-                        <div class="position" id="p3g4"></div>
-                        <div class="position" id="p3g5"></div>
-                        <div class="position" id="p3g6"></div>
-                        <div class="position" id="p3g7"></div>
-                        <div class="position" id="p3g8"></div>
-                        <div class="position" id="p3g9"></div>
-                        <div class="position" id="p3g0"></div>
-            
-                        <div class="position header">7</div>
-                        <div class="position" id="p3h1"></div>
-                        <div class="position" id="p3h2"></div>
-                        <div class="position" id="p3h3"></div>
-                        <div class="position" id="p3h4"></div>
-                        <div class="position" id="p3h5"></div>
-                        <div class="position" id="p3h6"></div>
-                        <div class="position" id="p3h7"></div>
-                        <div class="position" id="p3h8"></div>
-                        <div class="position" id="p3h9"></div>
-                        <div class="position" id="p3h0"></div>
-            
-                        <div class="position header">8</div>
-                        <div class="position" id="p3i1"></div>
-                        <div class="position" id="p3i2"></div>
-                        <div class="position" id="p3i3"></div>
-                        <div class="position" id="p3i4"></div>
-                        <div class="position" id="p3i5"></div>
-                        <div class="position" id="p3i6"></div>
-                        <div class="position" id="p3i7"></div>
-                        <div class="position" id="p3i8"></div>
-                        <div class="position" id="p3i9"></div>
-                        <div class="position" id="p3i0"></div>
-            
-                        <div class="position header">9</div>
-                        <div class="position" id="p3j1"></div>
-                        <div class="position" id="p3j2"></div>
-                        <div class="position" id="p3j3"></div>
-                        <div class="position" id="p3j4"></div>
-                        <div class="position" id="p3j5"></div>
-                        <div class="position" id="p3j6"></div>
-                        <div class="position" id="p3j7"></div>
-                        <div class="position" id="p3j8"></div>
-                        <div class="position" id="p3j9"></div>
-                        <div class="position" id="p3j0"></div>
-            
-                        <div class="position header">10</div>
-                        <div class="position" id="p3k1"></div>
-                        <div class="position" id="p3k2"></div>
-                        <div class="position" id="p3k3"></div>
-                        <div class="position" id="p3k4"></div>
-                        <div class="position" id="p3k5"></div>
-                        <div class="position" id="p3k6"></div>
-                        <div class="position" id="p3k7"></div>
-                        <div class="position" id="p3k8"></div>
-                        <div class="position" id="p3k9"></div>
-                        <div class="position" id="p3k0"></div>
-                
-                    </div>
-                    <div class="back-to-top">
-                        <p><a href="#title">Back to Top</a></p>
-                    </div>
-                </section>
-
-                <section id="cuatro-jugadores">
-                    <div class="subtitle">
-                        <h2>Jugar entre 4 Jugadores.</h2>
-                    </div>
-                    <section class="player-form" id="form-4-jugadores">
-                        <div class="subtitle-form">
-                            <h3>Datos para Cuatro Jugadores</h3>
-                        </div>
-                        <form action="#" method="post">
-                            <label for="nombre">Nombre del Jugador 1</label>
-                            <input id="datos-jugador-frm-nombre-1" name="nombre" placeholder=""/>
-                            <br>
-                            <label for="nombre">Nombre del Jugador 2</label>
-                            <input id="datos-jugador-frm-nombre-2" name="nombre" placeholder=""/>
-                            <br>
-                            <label for="nombre">Nombre del Jugador 3</label>
-                            <input id="datos-jugador-frm-nombre-3" name="nombre" placeholder=""/>
-                            <br>
-                            <label for="nombre">Nombre del Jugador 4</label>
-                            <input id="datos-jugador-frm-nombre-4" name="nombre" placeholder=""/>
-                            <br>
-                            <div class="confirmar">
-                                <button type="submit">Confirmar</button>
-                            </div>
-                        </form>
-                    </section>
-                    <div class="table-title">
-                        <h3>Tabla Jugador 1.</h3>
-                    </div>
-                    <div class="battleship-board" id="tablero-4-jugadores-1">
-
-                        <div class="position header"></div>
-                        <div class="position header">A</div>
-                        <div class="position header">B</div>
-                        <div class="position header">C</div>
-                        <div class="position header">D</div>
-                        <div class="position header">E</div>
-                        <div class="position header">F</div>
-                        <div class="position header">G</div>
-                        <div class="position header">H</div>
-                        <div class="position header">I</div>
-                        <div class="position header">J</div>
-    
-                        <div class="position header">1</div>
-                        <div class="position" id="p3b1"></div>
-                        <div class="position" id="p3b2"></div>
-                        <div class="position" id="p3b3"></div>
-                        <div class="position" id="p3b4"></div>
-                        <div class="position" id="p3b5"></div>
-                        <div class="position" id="p3b6"></div>
-                        <div class="position" id="p3b7"></div>
-                        <div class="position" id="p3b8"></div>
-                        <div class="position" id="p3b9"></div>
-                        <div class="position" id="p3b0"></div>
-    
-                        <div class="position header">2</div>
-                        <div class="position" id="p3c1"></div>
-                        <div class="position" id="p3c2"></div>
-                        <div class="position" id="p3c3"></div>
-                        <div class="position" id="p3c4"></div>
-                        <div class="position" id="p3c5"></div>
-                        <div class="position" id="p3c6"></div>
-                        <div class="position" id="p3c7"></div>
-                        <div class="position" id="p3c8"></div>
-                        <div class="position" id="p3c9"></div>
-                        <div class="position" id="p3c0"></div>
-            
-                        <div class="position header">3</div>
-                        <div class="position" id="p3d1"></div>
-                        <div class="position" id="p3d2"></div>
-                        <div class="position" id="p3d3"></div>
-                        <div class="position" id="p3d4"></div>
-                        <div class="position" id="p3d5"></div>
-                        <div class="position" id="p3d6"></div>
-                        <div class="position" id="p3d7"></div>
-                        <div class="position" id="p3d8"></div>
-                        <div class="position" id="p3d9"></div>
-                        <div class="position" id="p3d0"></div>
-            
-                        <div class="position header">4</div>
-                        <div class="position" id="p3e1"></div>
-                        <div class="position" id="p3e2"></div>
-                        <div class="position" id="p3e3"></div>
-                        <div class="position" id="p3e4"></div>
-                        <div class="position" id="p3e5"></div>
-                        <div class="position" id="p3e6"></div>
-                        <div class="position" id="p3e7"></div>
-                        <div class="position" id="p3e8"></div>
-                        <div class="position" id="p3e9"></div>
-                        <div class="position" id="p3e0"></div>
-            
-                        <div class="position header">5</div>
-                        <div class="position" id="p3f1"></div>
-                        <div class="position" id="p3f2"></div>
-                        <div class="position" id="p3f3"></div>
-                        <div class="position" id="p3f4"></div>
-                        <div class="position" id="p3f5"></div>
-                        <div class="position" id="p3f6"></div>
-                        <div class="position" id="p3f7"></div>
-                        <div class="position" id="p3f8"></div>
-                        <div class="position" id="p3f9"></div>
-                        <div class="position" id="p3f0"></div>
-            
-                        <div class="position header">6</div>
-                        <div class="position" id="p3g1"></div>
-                        <div class="position" id="p3g2"></div>
-                        <div class="position" id="p3g3"></div>
-                        <div class="position" id="p3g4"></div>
-                        <div class="position" id="p3g5"></div>
-                        <div class="position" id="p3g6"></div>
-                        <div class="position" id="p3g7"></div>
-                        <div class="position" id="p3g8"></div>
-                        <div class="position" id="p3g9"></div>
-                        <div class="position" id="p3g0"></div>
-            
-                        <div class="position header">7</div>
-                        <div class="position" id="p3h1"></div>
-                        <div class="position" id="p3h2"></div>
-                        <div class="position" id="p3h3"></div>
-                        <div class="position" id="p3h4"></div>
-                        <div class="position" id="p3h5"></div>
-                        <div class="position" id="p3h6"></div>
-                        <div class="position" id="p3h7"></div>
-                        <div class="position" id="p3h8"></div>
-                        <div class="position" id="p3h9"></div>
-                        <div class="position" id="p3h0"></div>
-            
-                        <div class="position header">8</div>
-                        <div class="position" id="p3i1"></div>
-                        <div class="position" id="p3i2"></div>
-                        <div class="position" id="p3i3"></div>
-                        <div class="position" id="p3i4"></div>
-                        <div class="position" id="p3i5"></div>
-                        <div class="position" id="p3i6"></div>
-                        <div class="position" id="p3i7"></div>
-                        <div class="position" id="p3i8"></div>
-                        <div class="position" id="p3i9"></div>
-                        <div class="position" id="p3i0"></div>
-            
-                        <div class="position header">9</div>
-                        <div class="position" id="p3j1"></div>
-                        <div class="position" id="p3j2"></div>
-                        <div class="position" id="p3j3"></div>
-                        <div class="position" id="p3j4"></div>
-                        <div class="position" id="p3j5"></div>
-                        <div class="position" id="p3j6"></div>
-                        <div class="position" id="p3j7"></div>
-                        <div class="position" id="p3j8"></div>
-                        <div class="position" id="p3j9"></div>
-                        <div class="position" id="p3j0"></div>
-            
-                        <div class="position header">10</div>
-                        <div class="position" id="p3k1"></div>
-                        <div class="position" id="p3k2"></div>
-                        <div class="position" id="p3k3"></div>
-                        <div class="position" id="p3k4"></div>
-                        <div class="position" id="p3k5"></div>
-                        <div class="position" id="p3k6"></div>
-                        <div class="position" id="p3k7"></div>
-                        <div class="position" id="p3k8"></div>
-                        <div class="position" id="p3k9"></div>
-                        <div class="position" id="p3k0"></div>
-                
-                    </div>
-                    <div class="table-title">
-                        <h3>Tabla Jugador 2.</h3>
-                    </div>
-                    <div class="battleship-board" id="tablero-4-jugadores-2">
-
-                        <div class="position header"></div>
-                        <div class="position header">A</div>
-                        <div class="position header">B</div>
-                        <div class="position header">C</div>
-                        <div class="position header">D</div>
-                        <div class="position header">E</div>
-                        <div class="position header">F</div>
-                        <div class="position header">G</div>
-                        <div class="position header">H</div>
-                        <div class="position header">I</div>
-                        <div class="position header">J</div>
-    
-                        <div class="position header">1</div>
-                        <div class="position" id="p3b1"></div>
-                        <div class="position" id="p3b2"></div>
-                        <div class="position" id="p3b3"></div>
-                        <div class="position" id="p3b4"></div>
-                        <div class="position" id="p3b5"></div>
-                        <div class="position" id="p3b6"></div>
-                        <div class="position" id="p3b7"></div>
-                        <div class="position" id="p3b8"></div>
-                        <div class="position" id="p3b9"></div>
-                        <div class="position" id="p3b0"></div>
-    
-                        <div class="position header">2</div>
-                        <div class="position" id="p3c1"></div>
-                        <div class="position" id="p3c2"></div>
-                        <div class="position" id="p3c3"></div>
-                        <div class="position" id="p3c4"></div>
-                        <div class="position" id="p3c5"></div>
-                        <div class="position" id="p3c6"></div>
-                        <div class="position" id="p3c7"></div>
-                        <div class="position" id="p3c8"></div>
-                        <div class="position" id="p3c9"></div>
-                        <div class="position" id="p3c0"></div>
-            
-                        <div class="position header">3</div>
-                        <div class="position" id="p3d1"></div>
-                        <div class="position" id="p3d2"></div>
-                        <div class="position" id="p3d3"></div>
-                        <div class="position" id="p3d4"></div>
-                        <div class="position" id="p3d5"></div>
-                        <div class="position" id="p3d6"></div>
-                        <div class="position" id="p3d7"></div>
-                        <div class="position" id="p3d8"></div>
-                        <div class="position" id="p3d9"></div>
-                        <div class="position" id="p3d0"></div>
-            
-                        <div class="position header">4</div>
-                        <div class="position" id="p3e1"></div>
-                        <div class="position" id="p3e2"></div>
-                        <div class="position" id="p3e3"></div>
-                        <div class="position" id="p3e4"></div>
-                        <div class="position" id="p3e5"></div>
-                        <div class="position" id="p3e6"></div>
-                        <div class="position" id="p3e7"></div>
-                        <div class="position" id="p3e8"></div>
-                        <div class="position" id="p3e9"></div>
-                        <div class="position" id="p3e0"></div>
-            
-                        <div class="position header">5</div>
-                        <div class="position" id="p3f1"></div>
-                        <div class="position" id="p3f2"></div>
-                        <div class="position" id="p3f3"></div>
-                        <div class="position" id="p3f4"></div>
-                        <div class="position" id="p3f5"></div>
-                        <div class="position" id="p3f6"></div>
-                        <div class="position" id="p3f7"></div>
-                        <div class="position" id="p3f8"></div>
-                        <div class="position" id="p3f9"></div>
-                        <div class="position" id="p3f0"></div>
-            
-                        <div class="position header">6</div>
-                        <div class="position" id="p3g1"></div>
-                        <div class="position" id="p3g2"></div>
-                        <div class="position" id="p3g3"></div>
-                        <div class="position" id="p3g4"></div>
-                        <div class="position" id="p3g5"></div>
-                        <div class="position" id="p3g6"></div>
-                        <div class="position" id="p3g7"></div>
-                        <div class="position" id="p3g8"></div>
-                        <div class="position" id="p3g9"></div>
-                        <div class="position" id="p3g0"></div>
-            
-                        <div class="position header">7</div>
-                        <div class="position" id="p3h1"></div>
-                        <div class="position" id="p3h2"></div>
-                        <div class="position" id="p3h3"></div>
-                        <div class="position" id="p3h4"></div>
-                        <div class="position" id="p3h5"></div>
-                        <div class="position" id="p3h6"></div>
-                        <div class="position" id="p3h7"></div>
-                        <div class="position" id="p3h8"></div>
-                        <div class="position" id="p3h9"></div>
-                        <div class="position" id="p3h0"></div>
-            
-                        <div class="position header">8</div>
-                        <div class="position" id="p3i1"></div>
-                        <div class="position" id="p3i2"></div>
-                        <div class="position" id="p3i3"></div>
-                        <div class="position" id="p3i4"></div>
-                        <div class="position" id="p3i5"></div>
-                        <div class="position" id="p3i6"></div>
-                        <div class="position" id="p3i7"></div>
-                        <div class="position" id="p3i8"></div>
-                        <div class="position" id="p3i9"></div>
-                        <div class="position" id="p3i0"></div>
-            
-                        <div class="position header">9</div>
-                        <div class="position" id="p3j1"></div>
-                        <div class="position" id="p3j2"></div>
-                        <div class="position" id="p3j3"></div>
-                        <div class="position" id="p3j4"></div>
-                        <div class="position" id="p3j5"></div>
-                        <div class="position" id="p3j6"></div>
-                        <div class="position" id="p3j7"></div>
-                        <div class="position" id="p3j8"></div>
-                        <div class="position" id="p3j9"></div>
-                        <div class="position" id="p3j0"></div>
-            
-                        <div class="position header">10</div>
-                        <div class="position" id="p3k1"></div>
-                        <div class="position" id="p3k2"></div>
-                        <div class="position" id="p3k3"></div>
-                        <div class="position" id="p3k4"></div>
-                        <div class="position" id="p3k5"></div>
-                        <div class="position" id="p3k6"></div>
-                        <div class="position" id="p3k7"></div>
-                        <div class="position" id="p3k8"></div>
-                        <div class="position" id="p3k9"></div>
-                        <div class="position" id="p3k0"></div>
-                
-                    </div>
-                    <div class="table-title">
-                        <h3>Tabla Jugador 3.</h3>
-                    </div>
-                    <div class="battleship-board" id="tablero-4-jugadores-3">
+                    <div class="battleship-board" id="tablero-oponente-2">
 
                         <div class="position header"></div>
                         <div class="position header">A</div>
@@ -1395,7 +635,7 @@
                     <div class="table-title">
                         <h3>Tabla Jugador 4.</h3>
                     </div>
-                    <div class="battleship-board" id="tablero-4-jugadores-4">
+                    <div class="battleship-board" id="tablero-oponente-3">
 
                         <div class="position header"></div>
                         <div class="position header">A</div>
@@ -1531,7 +771,7 @@
                 
                     </div>
                     <div class="back-to-top">
-                        <p><a href="#title">Back to Top</a></p>
+                        <p><a href="#title">Página Principal</a></p>
                     </div>
                 </section>
             </section>

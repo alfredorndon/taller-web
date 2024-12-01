@@ -30,8 +30,10 @@ section {
     padding: 30px;
     margin: 20px;
     border: 1px solid #000;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: center;
+    justify-content: center;
 }
 
 #title {
@@ -56,22 +58,13 @@ section {
     color: #003f5c;
 }
 
-.subtitle-form {
+.subtitle-form , .table-title {
     font-family: 'Rye', sans-serif;
     font-size: 1.5em;
-    line-height: 0.50;
     text-align: center;
     justify-content: center;
-    height: auto;
-    margin: 0;
     color: #003f5c;
-}
-
-#instrucciones, #power-ups {
-    width: 800px;
-    text-align: center;
-    justify-content: center;
-    margin: 20px auto;
+    margin: 15px;
 }
 
 p {
@@ -93,6 +86,8 @@ h3 {
     border: 1px solid #000;
     color: #003f5c;
     font-size: 18px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 .mini-menu nav ul {
@@ -237,6 +232,7 @@ button:hover {
 .confirmar {
     display: flex; /* Usar flexbox para centrar */
     justify-content: center; /* Centrar horizontalmente */
+    margin: 20px;
 }
 
 .legend {
@@ -244,8 +240,8 @@ button:hover {
     border-radius: 10px; /* Bordes redondeados */
     padding: 30px; /* Espaciado interno */
     text-align: center; /* Centrar texto */
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 500px;
+    margin-right: 500px;
 }
 
 .legend ul {
@@ -256,4 +252,18 @@ button:hover {
 
 .legend li {
     margin: 10px 0; /* Espaciado entre los elementos de la lista */
+}
+
+.botones-jugador {
+    display: flex;
+    justify-content: space-around;
+}
+
+.mensajes-jugador p{
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.menu-barcos {
+    justify-content: center;
 }

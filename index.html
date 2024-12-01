@@ -81,7 +81,7 @@
                 <p>El primer jugador en hundir toda la flota enemiga gana la partida.</p>
                 <h3 id="duration">Duración del Turno.</h3>
                 <p>Se debe establecer un límite de tiempo para cada turno de 60 segundos (1 minuto) para mantener el ritmo del juego. Si un jugador no realiza su movimiento dentro del límite de tiempo, se considera un turno perdido.</p>
-                <div class="back-to-top">
+                <div class="back-to-top" id="back-to-top-instrucciones">
                     <p><a href="index.html">Página Principal</a></p>
                 </div>
             </section>
@@ -147,15 +147,42 @@
                     <li>Tiempo de recarga: 10 turnos.</li>
                     <li>Cada jugador podrá utilizar sus “power-ups” independientemente, sin compartir información con otros jugadores.</li>
                 </ul>
-                <div class="back-to-top">
+
+                <div class="back-to-top" id="back-to-top-power-ups">
                     <p><a href="index.html">Página Principal</a></p>
                 </div>
+
+                <section class="botones-jugador" id="botones-power-ups">
+                    <div class="confirmar" id="boton-sonar">
+                        <button type="submit">Sonar</button>
+                    </div>
+                    <div class="confirmar" id="boton-aviones-ataque">
+                        <button type="submit">Aviones de Ataque</button>
+                    </div>
+                    <div class="confirmar" id="boton-mina-marina">
+                        <button type="submit">Mina Marina</button>
+                    </div>
+                    <div class="confirmar" id="boton-escudo-defensivo">
+                        <button type="submit">Escudo Defensivo</button>
+                    </div>
+                    <div class="confirmar" id="boton-misil-crucero">
+                        <button type="submit">Misil Crucero</button>
+                    </div>
+                    <div class="confirmar" id="boton-reparacion-rapida">
+                        <button type="submit">Reparación Rápida</button>
+                    </div>
+                    <div class="confirmar" id="boton-ataque-emp">
+                        <button type="submit">Ataque EMP</button>
+                    </div>
+                </section>
+
             </section>
 
             <section id="jugar">
                 <div class="subtitle">
                     <h2>Jugar</h2>
                 </div>
+
                 <section class="player-form" id="player-form-name">
                     <div class="subtitle-form">
                         <h3>Datos del Jugador</h3>
@@ -169,13 +196,17 @@
                         </div>
                     </form>
                 </section>
-                <nav id="seleccion-jugadores">
-                    <ul>
-                        <li><a href="#dos-jugadores">2 Jugadores</a></li>
-                        <li><a href="#tres-jugadores">3 Jugadores</a></li>
-                        <li><a href="#cuatro-jugadores">4 Jugadores</a></li>
-                    </ul>
-                </nav>
+
+                <div class="mini-menu">
+                    <nav id="seleccion-jugadores">
+                        <ul>
+                            <li><a href="#dos-jugadores">2 Jugadores</a></li>
+                            <li><a href="#tres-jugadores">3 Jugadores</a></li>
+                            <li><a href="#cuatro-jugadores">4 Jugadores</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
                 <section class="legend" id="ships-legend">
                     <div class="subtitle-form">
                         <h3>Leyenda</h3>
@@ -188,6 +219,7 @@
                         <li>1 Destructor (2 casillas, ya sea en sentido horizontal o vertical).</li>
                     </ul>
                 </section>
+
                 <section class="legend" id="instrucciones-multijugador">
                     <div class="subtitle-form">
                         <h3>Instrucciones Multijigador</h3>
@@ -214,13 +246,28 @@
                         <li>El último jugador en tener barcos en su tablero es el ganador.</li>
                     </ul>
                 </section>
+
                 <section id="tableros-jugadores">
+
                     <div class="subtitle">
                         <h2>¡Prepárate para Jugar!</h2>
                     </div>
+
+                    <section class="mensajes-jugador" id="mensajes-jugador-tablero">
+                        <div class="table-title">
+                            <h3>Mensajes de Interés</h3>
+                        </div>
+                        <p id="texto-establecer">¡Prepárate! Configura tu tablero para empezar a jugar. Selecciona "Barcos" para colocarlos en tu tablero.</p>
+                        <p id="texto-atacar">¡Es tu turno! Selecciona un recuadro para atacar al Oponente.</p>
+                        <p id="texto-power-ups">Si quieres utilizar Power-Ups, presiona el botón para seleccionar.</p>
+                        <p id="texto-instrucciones">Al jugar con varios oponentes, es importante leer las instrucciones para entender las reglas del juego.</p>
+                        <p id="texto-abandonar">Si quieres abandonar la partida, sólo debes presionar el botón. Esta acción no se puede revertir.</p>
+                    </section>
+
                     <div class="table-title">
-                        <h3>Tabla Jugador 1.</h3>
+                        <h3>Tablero Jugador</h3>
                     </div>
+
                     <div class="battleship-board" id="tablero-jugador">
 
                         <div class="position header"></div>
@@ -356,9 +403,50 @@
                         <div class="position" id="p3k0"></div>
                 
                     </div>
+
+                    <section class="botones-jugador" id="botones-jugador-tablero">
+                        <div class="confirmar" id="boton-barcos">
+                            <button type="submit">Barcos</button>
+                        </div>
+                        <div class="confirmar" id="boton-establecer">
+                            <button type="submit">Establecer</button>
+                        </div>
+                        <div class="confirmar" id="boton-atacar">
+                            <button type="submit">Atacar</button>
+                        </div>
+                        <div class="confirmar" id="boton-power-ups">
+                            <button type="submit">Power-Ups</button>
+                        </div>
+                        <div class="confirmar" id="boton-instrucciones">
+                            <button type="submit">Instrucciones</button>
+                        </div>
+                        <div class="confirmar" id="boton-abandonar">
+                            <button type="submit">Abandonar</button>
+                        </div>
+                    </section>
+
+                    <section class="menu-barcos" id="menu-seleccion-barcos">
+                        <div class="confirmar" id="boton-portaviones">
+                            <button type="submit">Portaaviones</button>
+                        </div>
+                        <div class="confirmar" id="boton-acorazado">
+                            <button type="submit">Acorazado</button>
+                        </div>
+                        <div class="confirmar" id="boton-crucero">
+                            <button type="submit">Crucero</button>
+                        </div>
+                        <div class="confirmar" id="boton-submarino">
+                            <button type="submit">Submarino</button>
+                        </div>
+                        <div class="confirmar" id="boton-destructor">
+                            <button type="submit">Destructor</button>
+                        </div>
+                    </section>
+
                     <div class="table-title">
-                        <h3>Tabla Jugador 2.</h3>
+                        <h3>Tablero Oponente 1</h3>
                     </div>
+
                     <div class="battleship-board" id="tablero-oponente-1">
 
                         <div class="position header"></div>
@@ -494,9 +582,11 @@
                         <div class="position" id="p3k0"></div>
                 
                     </div>
+
                     <div class="table-title">
-                        <h3>Tabla Jugador 3.</h3>
+                        <h3>Tablero Oponente 2</h3>
                     </div>
+
                     <div class="battleship-board" id="tablero-oponente-2">
 
                         <div class="position header"></div>
@@ -632,9 +722,11 @@
                         <div class="position" id="p3k0"></div>
                 
                     </div>
+
                     <div class="table-title">
-                        <h3>Tabla Jugador 4.</h3>
+                        <h3>Tablero Oponente 3</h3>
                     </div>
+
                     <div class="battleship-board" id="tablero-oponente-3">
 
                         <div class="position header"></div>
@@ -770,18 +862,22 @@
                         <div class="position" id="p3k0"></div>
                 
                     </div>
+
                     <div class="back-to-top">
                         <p><a href="index.html">Página Principal</a></p>
                     </div>
+                    
                 </section>
             </section>
 
         </main>
+
         <footer>
             <div id="footer">
                 <p>Hecho por Alfredo Rondón.</p>
                 <p>Programación Orientada a la Web.</p>
             </div>
         </footer>
+
     </body>
 </html>

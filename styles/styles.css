@@ -164,7 +164,7 @@ h3 {
     grid-template-rows: repeat(11, 1fr); /* 10 filas + 1 para los encabezados */
     width: 550px; /* Asegúrate de que el ancho sea menor que el ancho del contenedor */
     height: 550px; /* Ajusta según sea necesario */
-    background-image: url('images/fondo-tablero.jpg'); 
+    background-image: url('images/fondo-tablero.jpeg'); 
 
     background-size: cover; 
     background-position: center; 

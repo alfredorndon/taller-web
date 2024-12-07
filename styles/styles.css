@@ -29,7 +29,7 @@ body {
 section {
     padding: 30px;
     margin: 20px;
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
     margin-left: 50px;
     margin-right: 50px;
     text-align: center;
@@ -83,7 +83,7 @@ h3 {
 .mini-menu {
     text-align: center;
     padding: 20px;
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
     color: #003f5c;
     font-size: 18px;
     margin-left: 50px;

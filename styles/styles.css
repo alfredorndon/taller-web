@@ -1,5 +1,14 @@
 /* main styles */
 
+:root {
+    --board-columns: 10;
+    --board-rows: 10;
+    --board-width: 240px;
+    --board-height: auto;
+    --posición-width: 40px;
+    --posición-height: 40px;
+}
+
 @font-face {
     font-family:'Rye';
     src: url('fonts/Rye-Regular.ttf') format('truetype');
@@ -165,7 +174,6 @@ h3 {
     width: 550px; /* Asegúrate de que el ancho sea menor que el ancho del contenedor */
     height: 550px; /* Ajusta según sea necesario */
     background-image: url('images/fondo-tablero.jpeg'); 
-
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat; 
@@ -266,4 +274,28 @@ button:hover {
 
 .menu-barcos {
     justify-content: center;
+}
+
+.cruiser {
+    background: url('images/ship2.png') 0 0 no-repeat;
+    background-size: cover;
+    text-indent: 150%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.cruiser.tile-2 {
+  background-position: 0 calc(var(--posición-height) * -1);
+}
+
+.cruiser.tile-3 {
+  background-position: 0 calc(var(--posición-height) * -2.3);
+}
+
+.cruiser.tile-4 {
+  background-position: 0 calc(var(--posición-height) * -3.4);
+}
+
+.cruiser.horizontal {
+    transform: rotateZ(-90deg);
 }
